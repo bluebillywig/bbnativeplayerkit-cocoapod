@@ -3,7 +3,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "BlueBillywigNativePlayerKit-iOS"
-  spec.version      = "8.1.0"
+  spec.version      = "8.2.0"
   spec.summary      = "Blue Billywig native player kit"
 
   spec.description  = <<-DESC
@@ -22,7 +22,7 @@ Pod::Spec.new do |spec|
 
   spec.dependency   'GoogleAds-IMA-iOS-SDK', '3.19.1'
   spec.dependency   'google-cast-sdk-dynamic-xcframework-ios-bb', '4.8.0'
-  spec.dependency   'BlueBillywigNativeShared-iOS', '8.1.0'
+  spec.dependency   'BlueBillywigNativeShared-iOS', '8.2.0'
   spec.dependency   'GoogleUserMessagingPlatform', '~> 2.1'
 
   spec.framework  = "UIKit", "Foundation", "AVFoundation"

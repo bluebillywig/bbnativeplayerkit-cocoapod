@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		6i1p/XyAIX8S8t4q9ONFUea63Lo=
+		GJAz2cj5RmftMrilDKvxvh7xlzk=
 		</data>
 		<key>BBNativePlayerKit_profile</key>
 		<data>
-		zNQdxvcut67+kpTIsCbmZn5j/yw=
+		gfwR+EptvHK1r8sNMbvC1MzR/Yc=
 		</data>
 		<key>Headers/BBNativePlayerKit-Swift.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		X01AUNGr6gH/XJxBL9JnspZi1ug=
+		s7DnNbenFDzX4CpGDQ0xoFvCQLw=
 		</data>
 		<key>Lato-Bold.ttf</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/BBNativePlayerKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		y9G4feHQyytNtgIqCMFIy3PZWow=
+		kOvkkOVNfKqh8qBV5D0wUrHB18c=
 		</data>
 		<key>Modules/BBNativePlayerKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/BBNativePlayerKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		avikPa/ylvMaoGdhON59IJbEfrw=
+		GYTMSQRlZcIRSMvGdHPPosd6mSU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,14 +63,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			L27sbFAm3uhXC0BnOhc3U0bI9vIMVbPfLsXkGxsiBFU=
+			0XjvGKLgwLzlCeZ9V1RkF03EMkjt4QzCyK5lz8cKG7o=
 			</data>
 		</dict>
 		<key>BBNativePlayerKit_profile</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ssNZ30qs4pYJd/h730zr/8kWHE4Y+qtZeSzWTr5rsyI=
+			5CW7voHAx5gGvgMKb8HPaPdB+d9uQXc4LJlCecCekm4=
 			</data>
 		</dict>
 		<key>Headers/BBNativePlayerKit-Swift.h</key>
@@ -105,7 +105,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bnEHGAJUl30MeF4RBKXCccV3M/1shINNrvAH1bwky54=
+			zkna8xjZ4025S9rWon0AOE8QB7144VvdRwFw4JxncgE=
 			</data>
 		</dict>
 		<key>Modules/BBNativePlayerKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9cT/eWecWG5QjvyDMcpDgsYDehfECHsli2XuU2/kiM4=
+			ukMP0cToE6TLGYphcZsHZQ0p0mGbp2j4/J3FkACnuDk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
