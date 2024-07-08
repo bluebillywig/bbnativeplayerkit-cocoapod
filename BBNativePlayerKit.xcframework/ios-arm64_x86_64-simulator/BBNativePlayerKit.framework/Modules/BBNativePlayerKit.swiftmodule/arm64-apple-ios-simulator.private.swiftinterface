@@ -239,13 +239,6 @@ extension BBNativePlayerKit.BBNativeShortsView : BBNativePlayerKit.BBNativePlaye
   public static func createJsonEmbedUrl(baseUrl: Swift.String, appIndicator: Swift.String, appId: Swift.String, contentIndicator: Swift.String? = nil, contentId: Swift.String? = nil) -> Swift.String
   @objc deinit
 }
-extension UIKit.UIColor {
-  public func rgb() -> Swift.Int?
-  convenience public init?(hex: Swift.String)
-}
-extension UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) public func isVisible() -> Swift.Bool
-}
 @_inheritsConvenienceInitializers @objc(MediaViewController) @_Concurrency.MainActor(unsafe) public class ChromeCastViewController : UIKit.UIViewController, GoogleCast.GCKSessionManagerListener, GoogleCast.GCKRemoteMediaClientListener, GoogleCast.GCKLoggerDelegate, GoogleCast.GCKRequestDelegate, GoogleCast.GCKUIMiniMediaControlsViewControllerDelegate {
   @_Concurrency.MainActor(unsafe) weak public var delegate: (any BBNativePlayerKit.ChromeCastViewControllerDelegate)?
   @_Concurrency.MainActor(unsafe) public var sessionManager: GoogleCast.GCKSessionManager!
