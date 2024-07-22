@@ -707,6 +707,7 @@ SWIFT_PROTOCOL("_TtP17BBNativePlayerKit32ChromeCastViewControllerDelegate_")
 
 
 
+
 #endif
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
@@ -1415,6 +1416,7 @@ SWIFT_PROTOCOL("_TtP17BBNativePlayerKit32ChromeCastViewControllerDelegate_")
 - (void)chromeCastViewControllerWithChromeCastViewController:(MediaViewController * _Nonnull)chromeCastViewController mediaProgress:(float)position;
 - (void)chromeCastViewControllerWithDidRequestDirectCast:(MediaViewController * _Nonnull)chromeCastViewController;
 @end
+
 
 
 
