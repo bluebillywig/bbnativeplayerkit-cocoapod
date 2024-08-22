@@ -1,0 +1,50 @@
+name: Create no-bluetooth flavor for latest release
+
+on:
+  workflow_dispatch:
+  release:
+    types: [released]
+
+jobs:
+  create-flavor:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GLOBAL_ACTION_TOKEN }}
+
+      - name: Install Swift
+        uses: swift-actions/setup-swift@v2
+
+      - name: Prepare Google Cast SDK
+        run: |
+          GOOGLE_CAST_SDK_URL=`cat Package.swift | perl -n -e'/let googleCastSdkUrl = "(.*)"/ && print $1'`
+          GOOGLE_CAST_SDK_NB_URL=`echo ${GOOGLE_CAST_SDK_URL} | sed 's/GoogleCastSDK-ios-/GoogleCastSDK-ios-no-bluetooth-/'`
+
+          echo "GOOGLE_CAST_SDK_URL=${GOOGLE_CAST_SDK_URL}" >>$GITHUB_ENV
+          echo "GOOGLE_CAST_SDK_NB_URL=${GOOGLE_CAST_SDK_NB_URL}" >>$GITHUB_ENV
+
+          GOOGLE_CAST_SDK_NB_DIR=$(mktemp -d)
+
+          curl -o ${GOOGLE_CAST_SDK_NB_DIR}/google-cast-sdk.zip ${GOOGLE_CAST_SDK_NB_URL}
+
+          GOOGLE_CAST_SDK_CHECKSUM=`cat Package.swift | perl -n -e'/let googleCastSdkChecksum = "(.*)"/ && print $1'`
+          GOOGLE_CAST_SDK_NB_CHECKSUM=`swift package compute-checksum ${GOOGLE_CAST_SDK_NB_DIR}/google-cast-sdk.zip`
+
+          echo "GOOGLE_CAST_SDK_CHECKSUM=${GOOGLE_CAST_SDK_CHECKSUM}" >>$GITHUB_ENV
+          echo "GOOGLE_CAST_SDK_NB_CHECKSUM=${GOOGLE_CAST_SDK_NB_CHECKSUM}" >>$GITHUB_ENV
+
+      - name: Substitute Google Cast SDK flavor
+        run: |
+          sed -i 's,${{ env.GOOGLE_CAST_SDK_URL }},${{ env.GOOGLE_CAST_SDK_NB_URL }},g' Package.swift
+          sed -i 's,${{ env.GOOGLE_CAST_SDK_CHECKSUM }},${{ env.GOOGLE_CAST_SDK_NB_CHECKSUM }},g' Package.swift
+
+      - name: Create new branch
+        run: |
+          RELEASE_VERSION=${GITHUB_REF#refs/*/}
+
+          git checkout -b "${RELEASE_VERSION}-no-bluetooth" master
+          git push -u origin "${RELEASE_VERSION}-no-bluetooth"
