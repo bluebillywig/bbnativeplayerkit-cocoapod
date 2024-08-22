@@ -5,6 +5,9 @@ on:
   release:
     types: [released]
 
+permissions:
+  contents: write
+
 jobs:
   create-flavor:
     runs-on: ubuntu-latest
@@ -45,6 +48,8 @@ jobs:
         run: |
           RELEASE_VERSION=`git describe --abbrev=0 --tags`
 
+          git config user.name github-actions
+          git config user.email tech@bluebillywig.com
           git checkout -b "${RELEASE_VERSION}-no-bluetooth" master
           git add Package.swift
           git commit -m "${RELEASE_VERSION}"
