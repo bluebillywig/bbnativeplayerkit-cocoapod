@@ -6,15 +6,15 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		GJAz2cj5RmftMrilDKvxvh7xlzk=
+		6i1p/XyAIX8S8t4q9ONFUea63Lo=
 		</data>
 		<key>BBNativePlayerKit_profile</key>
 		<data>
-		QlfvZRURDmxX6QOKzBmfu0aw8z4=
+		Gq7x8XScERcGUtfwe1qzSdgRZL8=
 		</data>
 		<key>Headers/BBNativePlayerKit-Swift.h</key>
 		<data>
-		7ZMuvXqh+Jogw+YlkR2wDpEn7nA=
+		EheoZ63L8nRG2KjmC37cjG22qqk=
 		</data>
 		<key>Headers/BBNativePlayerKit.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		z8PewSZA/W2JaNf0NG1v26YHpgQ=
+		X01AUNGr6gH/XJxBL9JnspZi1ug=
 		</data>
 		<key>Lato-Bold.ttf</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/BBNativePlayerKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		zEUUS5Omc/WA4jFeyMI3AKra1Xs=
+		eYaUILPX4xcgsssCJ+ngx6TBse0=
 		</data>
 		<key>Modules/BBNativePlayerKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/BBNativePlayerKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Q2XUrMvs3f1H589WIQpJ33jsCbc=
+		KMbFQt793pv7MbCUSbSYLfMJvBA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,21 +63,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0XjvGKLgwLzlCeZ9V1RkF03EMkjt4QzCyK5lz8cKG7o=
+			L27sbFAm3uhXC0BnOhc3U0bI9vIMVbPfLsXkGxsiBFU=
 			</data>
 		</dict>
 		<key>BBNativePlayerKit_profile</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			N/wjf3S3qhRpFk+BTfmN/RWna51dkSy/nMxa1FUE8R8=
+			OHBHyTiURiOSfvabD76pwPOaYzRzNzLjeNaIMc34H9s=
 			</data>
 		</dict>
 		<key>Headers/BBNativePlayerKit-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cL4JjiWXofPiYBky309C8D5Biwk3gtSH32h0bxNYVCo=
+			SV2lPYw9vLNk1zGlQ4U3/7YeeP9f6R05Ab3J63ptvtA=
 			</data>
 		</dict>
 		<key>Headers/BBNativePlayerKit.h</key>
@@ -105,7 +105,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Csr87vjSeHYd5ldPX6kQWEiPOaRP1Mx+2NRhbTS2DJs=
+			9DMnGfL75txdHEBSPL6kwiWhtvBWC3646UUiyBzyG/0=
 			</data>
 		</dict>
 		<key>Modules/BBNativePlayerKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HfdqqHoG1pWeWa95CbYaWowuH0tP1Kq9i3mPxUYoQCM=
+			NcFA3ODKcn7e9HaoEjQtAvwYS+j8h0UJIHn4lzAB/to=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
