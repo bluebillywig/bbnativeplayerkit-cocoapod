@@ -52,5 +52,5 @@ jobs:
           git config user.email tech@bluebillywig.com
           git checkout -b "${RELEASE_VERSION}-no-bluetooth" master
           git add Package.swift
-          git commit -m "${RELEASE_VERSION}"
+          git commit -m "${RELEASE_VERSION} no bluetooth"
           git push -u origin "${RELEASE_VERSION}-no-bluetooth"
