@@ -50,6 +50,7 @@ jobs:
 
           git config user.name github-actions
           git config user.email tech@bluebillywig.com
+          git fetch --all
           git checkout -b "${RELEASE_VERSION}-no-bluetooth" master
           git add Package.swift
           git commit -m "${RELEASE_VERSION} no bluetooth"
