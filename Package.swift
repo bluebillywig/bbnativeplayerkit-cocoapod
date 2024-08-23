@@ -1,6 +1,9 @@
 // swift-tools-version:5.8
 import PackageDescription
 
+let googleCastSdkUrl = "https://dl.google.com/dl/chromecast/sdk/ios/GoogleCastSDK-ios-4.8.0_dynamic_xcframework.zip"
+let googleCastSdkChecksum = "4224724dc454b71eeab3debfe5c99e8a52ca9404d482f3b93c62e1c37be8dde4"
+
 let package = Package(
     name: "BlueBillywigNativePlayerKit-iOS",
     platforms: [ .iOS(.v14) ],
@@ -15,8 +18,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "google-cast-sdk-ios",
-            url: "https://dl.google.com/dl/chromecast/sdk/ios/GoogleCastSDK-ios-4.8.0_dynamic_xcframework.zip",
-            checksum: "4224724dc454b71eeab3debfe5c99e8a52ca9404d482f3b93c62e1c37be8dde4"
+            url: googleCastSdkUrl,
+            checksum: googleCastSdkChecksum
         ),
         .binaryTarget(
             name: "BBNativePlayerKit",
