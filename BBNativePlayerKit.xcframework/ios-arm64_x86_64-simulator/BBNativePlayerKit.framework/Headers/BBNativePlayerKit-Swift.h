@@ -663,6 +663,7 @@ SWIFT_PROTOCOL("_TtP17BBNativePlayerKit26BBNativeShortsViewDelegate_")
 
 @class GCKSessionManager;
 @class GCKSession;
+@class GCKCastSession;
 @class GCKRequest;
 @class GCKUIMiniMediaControlsViewController;
 @class GCKRemoteMediaClient;
@@ -675,6 +676,7 @@ SWIFT_CLASS_NAMED("ChromeCastViewController")
 - (void)sessionManager:(GCKSessionManager * _Nonnull)_ didStartSession:(GCKSession * _Nonnull)session;
 - (void)sessionManager:(GCKSessionManager * _Nonnull)_ didResumeSession:(GCKSession * _Nonnull)session;
 - (void)sessionManager:(GCKSessionManager * _Nonnull)_ didEndSession:(GCKSession * _Nonnull)_ withError:(NSError * _Nullable)error;
+- (void)sessionManager:(GCKSessionManager * _Nonnull)_ didStartCastSession:(GCKCastSession * _Nonnull)session;
 - (void)logMessage:(NSString * _Nonnull)message atLevel:(GCKLoggerLevel)level fromFunction:(NSString * _Nonnull)function location:(NSString * _Nonnull)location;
 - (void)requestDidComplete:(GCKRequest * _Nonnull)request;
 - (void)miniMediaControlsViewController:(GCKUIMiniMediaControlsViewController * _Nonnull)miniMediaControlsViewController shouldAppear:(BOOL)shouldAppear;
@@ -692,6 +694,7 @@ SWIFT_PROTOCOL("_TtP17BBNativePlayerKit32ChromeCastViewControllerDelegate_")
 - (void)chromeCastViewControllerWithChromeCastViewController:(MediaViewController * _Nonnull)chromeCastViewController sessionEnded:(BOOL)resumeInAVPlayer withError:(NSError * _Nullable)withError;
 - (void)chromeCastViewControllerWithChromeCastViewController:(MediaViewController * _Nonnull)chromeCastViewController sessionFailedToStart:(NSError * _Nullable)withError;
 - (void)chromeCastViewControllerWithChromeCastViewController:(MediaViewController * _Nonnull)chromeCastViewController sessionFailedToResume:(NSError * _Nullable)withError;
+- (void)chromeCastViewControllerWithMediaStatusStarted:(MediaViewController * _Nonnull)chromeCastViewController sessionId:(NSString * _Nonnull)sessionId;
 - (void)chromeCastViewControllerWithMediaStatusFinished:(MediaViewController * _Nonnull)chromeCastViewController;
 - (void)chromeCastViewControllerWithMediaStatusError:(MediaViewController * _Nonnull)chromeCastViewController;
 - (void)chromeCastViewControllerWithMediaStatusPlaying:(MediaViewController * _Nonnull)chromeCastViewController;
@@ -1382,6 +1385,7 @@ SWIFT_PROTOCOL("_TtP17BBNativePlayerKit26BBNativeShortsViewDelegate_")
 
 @class GCKSessionManager;
 @class GCKSession;
+@class GCKCastSession;
 @class GCKRequest;
 @class GCKUIMiniMediaControlsViewController;
 @class GCKRemoteMediaClient;
@@ -1394,6 +1398,7 @@ SWIFT_CLASS_NAMED("ChromeCastViewController")
 - (void)sessionManager:(GCKSessionManager * _Nonnull)_ didStartSession:(GCKSession * _Nonnull)session;
 - (void)sessionManager:(GCKSessionManager * _Nonnull)_ didResumeSession:(GCKSession * _Nonnull)session;
 - (void)sessionManager:(GCKSessionManager * _Nonnull)_ didEndSession:(GCKSession * _Nonnull)_ withError:(NSError * _Nullable)error;
+- (void)sessionManager:(GCKSessionManager * _Nonnull)_ didStartCastSession:(GCKCastSession * _Nonnull)session;
 - (void)logMessage:(NSString * _Nonnull)message atLevel:(GCKLoggerLevel)level fromFunction:(NSString * _Nonnull)function location:(NSString * _Nonnull)location;
 - (void)requestDidComplete:(GCKRequest * _Nonnull)request;
 - (void)miniMediaControlsViewController:(GCKUIMiniMediaControlsViewController * _Nonnull)miniMediaControlsViewController shouldAppear:(BOOL)shouldAppear;
@@ -1411,6 +1416,7 @@ SWIFT_PROTOCOL("_TtP17BBNativePlayerKit32ChromeCastViewControllerDelegate_")
 - (void)chromeCastViewControllerWithChromeCastViewController:(MediaViewController * _Nonnull)chromeCastViewController sessionEnded:(BOOL)resumeInAVPlayer withError:(NSError * _Nullable)withError;
 - (void)chromeCastViewControllerWithChromeCastViewController:(MediaViewController * _Nonnull)chromeCastViewController sessionFailedToStart:(NSError * _Nullable)withError;
 - (void)chromeCastViewControllerWithChromeCastViewController:(MediaViewController * _Nonnull)chromeCastViewController sessionFailedToResume:(NSError * _Nullable)withError;
+- (void)chromeCastViewControllerWithMediaStatusStarted:(MediaViewController * _Nonnull)chromeCastViewController sessionId:(NSString * _Nonnull)sessionId;
 - (void)chromeCastViewControllerWithMediaStatusFinished:(MediaViewController * _Nonnull)chromeCastViewController;
 - (void)chromeCastViewControllerWithMediaStatusError:(MediaViewController * _Nonnull)chromeCastViewController;
 - (void)chromeCastViewControllerWithMediaStatusPlaying:(MediaViewController * _Nonnull)chromeCastViewController;

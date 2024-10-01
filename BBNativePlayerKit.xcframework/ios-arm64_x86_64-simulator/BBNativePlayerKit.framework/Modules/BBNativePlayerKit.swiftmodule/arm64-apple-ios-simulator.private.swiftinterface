@@ -13,6 +13,7 @@ import SwiftUI
 import UIKit.UIDevice
 import UIKit
 import UserMessagingPlatform
+import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
@@ -263,6 +264,7 @@ extension BBNativePlayerKit.BBNativeShortsView : BBNativePlayerKit.BBNativePlaye
   @_Concurrency.MainActor(unsafe) @objc public func sessionManager(_: GoogleCast.GCKSessionManager, didStart session: GoogleCast.GCKSession)
   @_Concurrency.MainActor(unsafe) @objc public func sessionManager(_: GoogleCast.GCKSessionManager, didResumeSession session: GoogleCast.GCKSession)
   @_Concurrency.MainActor(unsafe) @objc public func sessionManager(_: GoogleCast.GCKSessionManager, didEnd _: GoogleCast.GCKSession, withError error: (any Swift.Error)?)
+  @_Concurrency.MainActor(unsafe) @objc public func sessionManager(_: GoogleCast.GCKSessionManager, didStart session: GoogleCast.GCKCastSession)
   @_Concurrency.MainActor(unsafe) @objc public func logMessage(_ message: Swift.String, at level: GoogleCast.GCKLoggerLevel, fromFunction function: Swift.String, location: Swift.String)
   @_Concurrency.MainActor(unsafe) @objc public func requestDidComplete(_ request: GoogleCast.GCKRequest)
   @_Concurrency.MainActor(unsafe) @objc public func miniMediaControlsViewController(_ miniMediaControlsViewController: GoogleCast.GCKUIMiniMediaControlsViewController, shouldAppear: Swift.Bool)
@@ -278,6 +280,7 @@ extension BBNativePlayerKit.BBNativeShortsView : BBNativePlayerKit.BBNativePlaye
   @objc func chromeCastViewController(chromeCastViewController: BBNativePlayerKit.ChromeCastViewController, sessionEnded resumeInAVPlayer: Swift.Bool, withError: (any Swift.Error)?)
   @objc func chromeCastViewController(chromeCastViewController: BBNativePlayerKit.ChromeCastViewController, sessionFailedToStart withError: (any Swift.Error)?)
   @objc func chromeCastViewController(chromeCastViewController: BBNativePlayerKit.ChromeCastViewController, sessionFailedToResume withError: (any Swift.Error)?)
+  @objc func chromeCastViewController(mediaStatusStarted chromeCastViewController: BBNativePlayerKit.ChromeCastViewController, sessionId: Swift.String)
   @objc func chromeCastViewController(mediaStatusFinished chromeCastViewController: BBNativePlayerKit.ChromeCastViewController)
   @objc func chromeCastViewController(mediaStatusError chromeCastViewController: BBNativePlayerKit.ChromeCastViewController)
   @objc func chromeCastViewController(mediaStatusPlaying chromeCastViewController: BBNativePlayerKit.ChromeCastViewController)
