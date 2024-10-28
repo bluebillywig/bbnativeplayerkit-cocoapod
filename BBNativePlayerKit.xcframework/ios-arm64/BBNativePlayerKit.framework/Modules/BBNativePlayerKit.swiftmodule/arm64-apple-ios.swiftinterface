@@ -134,6 +134,7 @@ extension BBNativePlayerKit.BBNativeShortsViewController : bbnativeshared.EventL
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class BBNativeShortsView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) weak public var delegate: (any BBNativePlayerKit.BBNativeShortsViewDelegate)?
+  @_Concurrency.MainActor(unsafe) public func destroy()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func removeFromSuperview()
   @objc deinit
 }
