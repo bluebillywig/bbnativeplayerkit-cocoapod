@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
 // swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BBNativePlayerKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFoundation
 import AVKit
 @_exported import BBNativePlayerKit
@@ -19,35 +20,35 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import bbnativeshared
 import os
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class BBNativePlayerViewController : UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) weak public var inViewController: bbnativeshared.InViewController?
-  @_Concurrency.MainActor(unsafe) weak public var chromeCastViewController: BBNativePlayerKit.ChromeCastViewController?
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillTransition(to size: CoreFoundation.CGSize, with coordinator: any UIKit.UIViewControllerTransitionCoordinator)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public var shouldAutorotate: Swift.Bool {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class BBNativePlayerViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor @preconcurrency weak public var inViewController: bbnativeshared.InViewController?
+  @_Concurrency.MainActor @preconcurrency weak public var chromeCastViewController: BBNativePlayerKit.ChromeCastViewController?
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillTransition(to size: CoreFoundation.CGSize, with coordinator: any UIKit.UIViewControllerTransitionCoordinator)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public var shouldAutorotate: Swift.Bool {
     @objc get
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
     @objc get
   }
-  @_Concurrency.MainActor(unsafe) public func __destruct()
+  @_Concurrency.MainActor @preconcurrency public func __destruct()
   @objc deinit
 }
 extension BBNativePlayerKit.BBNativePlayerViewController : UIKit.UIGestureRecognizerDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldReceive touch: UIKit.UITouch) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldReceive touch: UIKit.UITouch) -> Swift.Bool
 }
 extension BBNativePlayerKit.BBNativePlayerViewController : bbnativeshared.EventListenerInterface {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func onEvent(eventType: bbnativeshared.EventName, data: [Swift.String : Any]?)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func onEvent(eventType: bbnativeshared.EventName, data: [Swift.String : Any]?)
 }
 extension BBNativePlayerKit.BBNativePlayerView {
-  @_Concurrency.MainActor(unsafe) public func callApiMethod(method: bbnativeshared.ApiMethod, args: [Swift.String : Any?]?)
-  @_Concurrency.MainActor(unsafe) public func setApiProperty(property: bbnativeshared.ApiProperty, value: Any?)
-  @_Concurrency.MainActor(unsafe) public func getApiProperty(property: bbnativeshared.ApiProperty) -> Any?
-  @_Concurrency.MainActor(unsafe) public func destroy()
+  @_Concurrency.MainActor @preconcurrency public func callApiMethod(method: bbnativeshared.ApiMethod, args: [Swift.String : Any?]?)
+  @_Concurrency.MainActor @preconcurrency public func setApiProperty(property: bbnativeshared.ApiProperty, value: Any?)
+  @_Concurrency.MainActor @preconcurrency public func getApiProperty(property: bbnativeshared.ApiProperty) -> Any?
+  @_Concurrency.MainActor @preconcurrency public func destroy()
 }
 @objc public protocol BBNativePlayerViewDelegate {
   @objc optional func bbNativePlayerView(playerView: BBNativePlayerKit.BBNativePlayerView, didSetupWithJsonUrl url: Swift.String?)
@@ -94,52 +95,52 @@ extension BBNativePlayerKit.BBNativePlayerView {
   @objc optional func bbNativePlayerView(didTriggerUIPanGesture playerView: BBNativePlayerKit.BBNativePlayerView, translation: CoreFoundation.CGPoint, velocity: CoreFoundation.CGPoint, location: CoreFoundation.CGPoint, state: UIKit.UIGestureRecognizer.State)
 }
 extension BBNativePlayerKit.BBNativePlayerView : bbnativeshared.EventListenerInterface {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func onEvent(eventType: bbnativeshared.EventName, data: [Swift.String : Any]?)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func onEvent(eventType: bbnativeshared.EventName, data: [Swift.String : Any]?)
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class BBNativePlayerView : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) weak public var delegate: (any BBNativePlayerKit.BBNativePlayerViewDelegate)?
-  @_Concurrency.MainActor(unsafe) public var player: BBNativePlayerKit.BBNativePlayerAPI
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSublayers(of layer: QuartzCore.CALayer)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func removeFromSuperview()
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class BBNativePlayerView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any BBNativePlayerKit.BBNativePlayerViewDelegate)?
+  @_Concurrency.MainActor @preconcurrency public var player: BBNativePlayerKit.BBNativePlayerAPI
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSublayers(of layer: QuartzCore.CALayer)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func removeFromSuperview()
   @objc deinit
 }
 extension BBNativePlayerKit.BBNativePlayerView : AVKit.AVPlayerViewControllerDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func playerViewController(_ playerViewController: AVKit.AVPlayerViewController, willBeginFullScreenPresentationWithAnimationCoordinator coordinator: any UIKit.UIViewControllerTransitionCoordinator)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func playerViewController(_ playerViewController: AVKit.AVPlayerViewController, willEndFullScreenPresentationWithAnimationCoordinator coordinator: any UIKit.UIViewControllerTransitionCoordinator)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func playerViewController(_ playerViewController: AVKit.AVPlayerViewController, willBeginFullScreenPresentationWithAnimationCoordinator coordinator: any UIKit.UIViewControllerTransitionCoordinator)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func playerViewController(_ playerViewController: AVKit.AVPlayerViewController, willEndFullScreenPresentationWithAnimationCoordinator coordinator: any UIKit.UIViewControllerTransitionCoordinator)
 }
 extension BBNativePlayerKit.BBNativePlayerView : AVKit.AVRoutePickerViewDelegate {
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class BBNativeShortsViewController : UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillTransition(to size: CoreFoundation.CGSize, with coordinator: any UIKit.UIViewControllerTransitionCoordinator)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public var shouldAutorotate: Swift.Bool {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class BBNativeShortsViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillTransition(to size: CoreFoundation.CGSize, with coordinator: any UIKit.UIViewControllerTransitionCoordinator)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public var shouldAutorotate: Swift.Bool {
     @objc get
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
     @objc get
   }
-  @_Concurrency.MainActor(unsafe) public func __destruct()
+  @_Concurrency.MainActor @preconcurrency public func __destruct()
   @objc deinit
 }
 extension BBNativePlayerKit.BBNativeShortsViewController : UIKit.UIGestureRecognizerDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldReceive touch: UIKit.UITouch) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldReceive touch: UIKit.UITouch) -> Swift.Bool
 }
 extension BBNativePlayerKit.BBNativeShortsViewController : bbnativeshared.EventListenerInterface {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func onEvent(eventType: bbnativeshared.EventName, data: [Swift.String : Any]?)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func onEvent(eventType: bbnativeshared.EventName, data: [Swift.String : Any]?)
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class BBNativeShortsView : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) weak public var delegate: (any BBNativePlayerKit.BBNativeShortsViewDelegate)?
-  @_Concurrency.MainActor(unsafe) public func destroy()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func removeFromSuperview()
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class BBNativeShortsView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any BBNativePlayerKit.BBNativeShortsViewDelegate)?
+  @_Concurrency.MainActor @preconcurrency public func destroy()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func removeFromSuperview()
   @objc deinit
 }
 extension BBNativePlayerKit.BBNativeShortsView : bbnativeshared.EventListenerInterface {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func onEvent(eventType: bbnativeshared.EventName, data: [Swift.String : Any]?)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func onEvent(eventType: bbnativeshared.EventName, data: [Swift.String : Any]?)
 }
 extension BBNativePlayerKit.BBNativeShortsView : BBNativePlayerKit.BBNativePlayerViewDelegate {
 }
@@ -241,39 +242,39 @@ extension BBNativePlayerKit.BBNativeShortsView : BBNativePlayerKit.BBNativePlaye
   public static func createJsonEmbedUrl(baseUrl: Swift.String, appIndicator: Swift.String, appId: Swift.String, contentIndicator: Swift.String? = nil, contentId: Swift.String? = nil) -> Swift.String
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc(MediaViewController) @_Concurrency.MainActor(unsafe) public class ChromeCastViewController : UIKit.UIViewController, GoogleCast.GCKSessionManagerListener, GoogleCast.GCKRemoteMediaClientListener, GoogleCast.GCKLoggerDelegate, GoogleCast.GCKRequestDelegate, GoogleCast.GCKUIMiniMediaControlsViewControllerDelegate {
-  @_Concurrency.MainActor(unsafe) weak public var delegate: (any BBNativePlayerKit.ChromeCastViewControllerDelegate)?
-  @_Concurrency.MainActor(unsafe) public var sessionManager: GoogleCast.GCKSessionManager!
-  @_Concurrency.MainActor(unsafe) public var castButton: GoogleCast.GCKUICastButton!
-  @_Concurrency.MainActor(unsafe) public var miniMediaControlsContainerView: UIKit.UIView!
-  @_Concurrency.MainActor(unsafe) public var miniMediaControlsUsedExternaly: Swift.Bool
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) public func enable(showMiniControls: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) public func disable()
-  @_Concurrency.MainActor(unsafe) public func pauseCastSession()
-  @_Concurrency.MainActor(unsafe) public func resumeCastSession()
-  @_Concurrency.MainActor(unsafe) public func checkRunningSession()
-  @_Concurrency.MainActor(unsafe) public func setIgnoreCastUI(to: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) public func hasActivePlayingSession() -> Swift.Bool
-  @_Concurrency.MainActor(unsafe) public func __destruct()
-  @_Concurrency.MainActor(unsafe) public func play()
-  @_Concurrency.MainActor(unsafe) public func pause()
-  @_Concurrency.MainActor(unsafe) public func seekTo(time: Swift.Double)
-  @_Concurrency.MainActor(unsafe) public func mute()
-  @_Concurrency.MainActor(unsafe) public func unMute()
-  @_Concurrency.MainActor(unsafe) public func setMessageLabel(deviceName: Swift.String?, isThisPlayer: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc public func sessionManager(_: GoogleCast.GCKSessionManager, didStart session: GoogleCast.GCKSession)
-  @_Concurrency.MainActor(unsafe) @objc public func sessionManager(_: GoogleCast.GCKSessionManager, didResumeSession session: GoogleCast.GCKSession)
-  @_Concurrency.MainActor(unsafe) @objc public func sessionManager(_: GoogleCast.GCKSessionManager, didEnd _: GoogleCast.GCKSession, withError error: (any Swift.Error)?)
-  @_Concurrency.MainActor(unsafe) @objc public func sessionManager(_: GoogleCast.GCKSessionManager, didStart session: GoogleCast.GCKCastSession)
-  @_Concurrency.MainActor(unsafe) @objc public func logMessage(_ message: Swift.String, at level: GoogleCast.GCKLoggerLevel, fromFunction function: Swift.String, location: Swift.String)
-  @_Concurrency.MainActor(unsafe) @objc public func requestDidComplete(_ request: GoogleCast.GCKRequest)
-  @_Concurrency.MainActor(unsafe) @objc public func miniMediaControlsViewController(_ miniMediaControlsViewController: GoogleCast.GCKUIMiniMediaControlsViewController, shouldAppear: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc public func remoteMediaClient(_: GoogleCast.GCKRemoteMediaClient, didUpdate mediaStatus: GoogleCast.GCKMediaStatus?)
-  @_Concurrency.MainActor(unsafe) public func playerIsModal()
+@_inheritsConvenienceInitializers @objc(MediaViewController) @_Concurrency.MainActor @preconcurrency public class ChromeCastViewController : UIKit.UIViewController, GoogleCast.GCKSessionManagerListener, GoogleCast.GCKRemoteMediaClientListener, GoogleCast.GCKLoggerDelegate, GoogleCast.GCKRequestDelegate, GoogleCast.GCKUIMiniMediaControlsViewControllerDelegate {
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any BBNativePlayerKit.ChromeCastViewControllerDelegate)?
+  @_Concurrency.MainActor @preconcurrency public var sessionManager: GoogleCast.GCKSessionManager!
+  @_Concurrency.MainActor @preconcurrency public var castButton: GoogleCast.GCKUICastButton!
+  @_Concurrency.MainActor @preconcurrency public var miniMediaControlsContainerView: UIKit.UIView!
+  @_Concurrency.MainActor @preconcurrency public var miniMediaControlsUsedExternaly: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency public func enable(showMiniControls: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func disable()
+  @_Concurrency.MainActor @preconcurrency public func pauseCastSession()
+  @_Concurrency.MainActor @preconcurrency public func resumeCastSession()
+  @_Concurrency.MainActor @preconcurrency public func checkRunningSession()
+  @_Concurrency.MainActor @preconcurrency public func setIgnoreCastUI(to: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func hasActivePlayingSession() -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public func __destruct()
+  @_Concurrency.MainActor @preconcurrency public func play()
+  @_Concurrency.MainActor @preconcurrency public func pause()
+  @_Concurrency.MainActor @preconcurrency public func seekTo(time: Swift.Double)
+  @_Concurrency.MainActor @preconcurrency public func mute()
+  @_Concurrency.MainActor @preconcurrency public func unMute()
+  @_Concurrency.MainActor @preconcurrency public func setMessageLabel(deviceName: Swift.String?, isThisPlayer: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc public func sessionManager(_: GoogleCast.GCKSessionManager, didStart session: GoogleCast.GCKSession)
+  @_Concurrency.MainActor @preconcurrency @objc public func sessionManager(_: GoogleCast.GCKSessionManager, didResumeSession session: GoogleCast.GCKSession)
+  @_Concurrency.MainActor @preconcurrency @objc public func sessionManager(_: GoogleCast.GCKSessionManager, didEnd _: GoogleCast.GCKSession, withError error: (any Swift.Error)?)
+  @_Concurrency.MainActor @preconcurrency @objc public func sessionManager(_: GoogleCast.GCKSessionManager, didStart session: GoogleCast.GCKCastSession)
+  @_Concurrency.MainActor @preconcurrency @objc public func logMessage(_ message: Swift.String, at level: GoogleCast.GCKLoggerLevel, fromFunction function: Swift.String, location: Swift.String)
+  @_Concurrency.MainActor @preconcurrency @objc public func requestDidComplete(_ request: GoogleCast.GCKRequest)
+  @_Concurrency.MainActor @preconcurrency @objc public func miniMediaControlsViewController(_ miniMediaControlsViewController: GoogleCast.GCKUIMiniMediaControlsViewController, shouldAppear: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc public func remoteMediaClient(_: GoogleCast.GCKRemoteMediaClient, didUpdate mediaStatus: GoogleCast.GCKMediaStatus?)
+  @_Concurrency.MainActor @preconcurrency public func playerIsModal()
   @objc deinit
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
 @objc public protocol ChromeCastViewControllerDelegate {
   @objc func chromeCastViewController(chromeCastViewController: BBNativePlayerKit.ChromeCastViewController, sessionStarted session: GoogleCast.GCKSession)
