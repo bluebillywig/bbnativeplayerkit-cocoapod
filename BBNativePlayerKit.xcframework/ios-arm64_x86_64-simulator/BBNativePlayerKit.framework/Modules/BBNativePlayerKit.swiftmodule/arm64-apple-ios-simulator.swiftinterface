@@ -143,6 +143,7 @@ extension BBNativePlayerKit.BBNativeShortsView : bbnativeshared.EventListenerInt
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func onEvent(eventType: bbnativeshared.EventName, data: [Swift.String : Any]?)
 }
 extension BBNativePlayerKit.BBNativeShortsView : BBNativePlayerKit.BBNativePlayerViewDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bbNativePlayerView(playerView: BBNativePlayerKit.BBNativePlayerView, didSetupWithJsonUrl url: Swift.String?)
 }
 @_hasMissingDesignatedInitializers public class BBNativePlayerAPI {
   public func closeModalPlayer()

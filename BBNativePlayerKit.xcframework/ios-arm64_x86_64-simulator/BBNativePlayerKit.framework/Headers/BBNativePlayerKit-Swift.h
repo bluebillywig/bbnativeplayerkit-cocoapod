@@ -606,6 +606,7 @@ SWIFT_CLASS("_TtC17BBNativePlayerKit18BBNativeShortsView")
 
 
 @interface BBNativeShortsView (SWIFT_EXTENSION(BBNativePlayerKit)) <BBNativePlayerViewDelegate>
+- (void)bbNativePlayerViewWithPlayerView:(BBNativePlayerView * _Nonnull)playerView didSetupWithJsonUrl:(NSString * _Nullable)url;
 @end
 
 
@@ -1332,6 +1333,7 @@ SWIFT_CLASS("_TtC17BBNativePlayerKit18BBNativeShortsView")
 
 
 @interface BBNativeShortsView (SWIFT_EXTENSION(BBNativePlayerKit)) <BBNativePlayerViewDelegate>
+- (void)bbNativePlayerViewWithPlayerView:(BBNativePlayerView * _Nonnull)playerView didSetupWithJsonUrl:(NSString * _Nullable)url;
 @end
 
 
