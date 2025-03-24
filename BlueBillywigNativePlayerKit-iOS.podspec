@@ -21,7 +21,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/bluebillywig/bbnativeplayerkit-cocoapod.git", :tag => "#{spec.version}" }
 
   spec.dependency   'GoogleAds-IMA-iOS-SDK', '3.23.0'
-  spec.dependency   'BlueBillywigNativeShared-iOS', '8.21.0'
+  spec.dependency   'BlueBillywigNativeShared-iOS', '8.21.1'
   spec.dependency   'GoogleUserMessagingPlatform', '~> 2.1'
 
   spec.framework  = "UIKit", "Foundation", "AVFoundation"
