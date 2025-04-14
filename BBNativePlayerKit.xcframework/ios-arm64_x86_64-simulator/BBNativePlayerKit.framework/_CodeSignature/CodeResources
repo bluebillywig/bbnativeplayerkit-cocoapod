@@ -10,7 +10,7 @@
 		</data>
 		<key>BBNativePlayerKit_profile</key>
 		<data>
-		W+FEpogAZRlC61O7u7rTmCyAj0s=
+		v6o/Q842reMcgggVNNoH9fjysj4=
 		</data>
 		<key>Headers/BBNativePlayerKit-Swift.h</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/BBNativePlayerKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		4XQuNhdZD8neveKEBRfGUiY2ZP4=
+		HJXZbJ0jAAf4Pa23z4EVJOHpCsk=
 		</data>
 		<key>Modules/BBNativePlayerKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		dOOKNpQOQOp2x0B0RH/J6iCg3jA=
+		WsmbPBXBVhaTOlbBeRfOAJ2XRu4=
 		</data>
 		<key>Modules/BBNativePlayerKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,19 +46,19 @@
 		</data>
 		<key>Modules/BBNativePlayerKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		dOOKNpQOQOp2x0B0RH/J6iCg3jA=
+		WsmbPBXBVhaTOlbBeRfOAJ2XRu4=
 		</data>
 		<key>Modules/BBNativePlayerKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		HHu7UWOlFSVHNWFw9xS2uTzFwfs=
+		Slgla9OCQhSl7ETqCMJ+IpZ1Hxw=
 		</data>
 		<key>Modules/BBNativePlayerKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		4XQuNhdZD8neveKEBRfGUiY2ZP4=
+		HJXZbJ0jAAf4Pa23z4EVJOHpCsk=
 		</data>
 		<key>Modules/BBNativePlayerKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		wxerOpOjmrly5F6GBh2Ed7EN2JA=
+		uy/Bk3hJGnXGaeG3lwHMZ7iX8nw=
 		</data>
 		<key>Modules/BBNativePlayerKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -66,11 +66,11 @@
 		</data>
 		<key>Modules/BBNativePlayerKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		wxerOpOjmrly5F6GBh2Ed7EN2JA=
+		uy/Bk3hJGnXGaeG3lwHMZ7iX8nw=
 		</data>
 		<key>Modules/BBNativePlayerKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		fAqI6jPsCEHRPQ5rHzgg9GqqjYc=
+		1OPyWtL0Ybo9tfaIyu8G8QRE2co=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -90,7 +90,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gf/lr3rnsJOpspfdsk1ed0WBbNCW+eLE1HJsSmX/p4c=
+			z8ugYB9uW/gQkOBmj8kjU/dCVqQKKy4qzHEus0hViFA=
 			</data>
 		</dict>
 		<key>Headers/BBNativePlayerKit-Swift.h</key>
@@ -125,14 +125,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5E2MPerBK0vbR2O6wdMLS54vAv7ARzYd2GyO3Sfd1Q4=
+			8j0cmnhE5x3Shst55dNf9GNsT2lqBh6rflleV6Z0vzA=
 			</data>
 		</dict>
 		<key>Modules/BBNativePlayerKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lP8YgFhQna1dvUbuNa5vquPMtXi0HUm3NovZfamrR5A=
+			WKE66radvpFKIFegQsa1N4WCvdKgq6oRuhd8blR4pro=
 			</data>
 		</dict>
 		<key>Modules/BBNativePlayerKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -146,28 +146,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lP8YgFhQna1dvUbuNa5vquPMtXi0HUm3NovZfamrR5A=
+			WKE66radvpFKIFegQsa1N4WCvdKgq6oRuhd8blR4pro=
 			</data>
 		</dict>
 		<key>Modules/BBNativePlayerKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5rqi2bFzNvMUnJEZyjJ+CI4zweBlSzPZ3DHYUHmrt+s=
+			+Mb3DQdUsebP3o0Ub+pnDUd3TaMUW/VLKwGODUhNzOg=
 			</data>
 		</dict>
 		<key>Modules/BBNativePlayerKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5E2MPerBK0vbR2O6wdMLS54vAv7ARzYd2GyO3Sfd1Q4=
+			8j0cmnhE5x3Shst55dNf9GNsT2lqBh6rflleV6Z0vzA=
 			</data>
 		</dict>
 		<key>Modules/BBNativePlayerKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			71hI/NTLEnFGDPjLMF6K0qtPTzMjbOvl6IOBB8SaS6k=
+			cnPMJzOhaHdyYek2mZSggsGucU/eK2WwPy8b4fA9L1s=
 			</data>
 		</dict>
 		<key>Modules/BBNativePlayerKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -181,14 +181,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			71hI/NTLEnFGDPjLMF6K0qtPTzMjbOvl6IOBB8SaS6k=
+			cnPMJzOhaHdyYek2mZSggsGucU/eK2WwPy8b4fA9L1s=
 			</data>
 		</dict>
 		<key>Modules/BBNativePlayerKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+ORrIZA0Try7Zdb5b2sh6NbhhDCThBG8zhjyhqB0bc8=
+			ZSVrskpzjfEaRg62plSxpXzvQci6BikxC8mvssHtrpw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
