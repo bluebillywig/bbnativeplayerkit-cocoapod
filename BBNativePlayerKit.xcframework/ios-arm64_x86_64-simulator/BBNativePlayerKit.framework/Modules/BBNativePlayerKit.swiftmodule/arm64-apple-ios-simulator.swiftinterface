@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
-// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BBNativePlayerKit
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BBNativePlayerKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFoundation
 import AVKit
 @_exported import BBNativePlayerKit
@@ -302,6 +302,7 @@ extension BBNativePlayerKit.BBNativeRendererView : BBNativePlayerKit.BBNativePla
   @_Concurrency.MainActor @preconcurrency public func mute()
   @_Concurrency.MainActor @preconcurrency public func unMute()
   @_Concurrency.MainActor @preconcurrency public func setMessageLabel(deviceName: Swift.String?, isThisPlayer: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc public func sessionManager(_: GoogleCast.GCKSessionManager, willStart session: GoogleCast.GCKSession)
   @_Concurrency.MainActor @preconcurrency @objc public func sessionManager(_: GoogleCast.GCKSessionManager, didStart session: GoogleCast.GCKSession)
   @_Concurrency.MainActor @preconcurrency @objc public func sessionManager(_: GoogleCast.GCKSessionManager, didResumeSession session: GoogleCast.GCKSession)
   @_Concurrency.MainActor @preconcurrency @objc public func sessionManager(_: GoogleCast.GCKSessionManager, didEnd _: GoogleCast.GCKSession, withError error: (any Swift.Error)?)
