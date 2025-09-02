@@ -12,8 +12,8 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/bluebillywig/bbnativeshared-cocoapod", exact: "8.33.0"),
-        .package(url: "https://github.com/googleads/swift-package-manager-google-interactive-media-ads-ios", exact: "3.19.1"),
-        .package(url: "https://github.com/googleads/swift-package-manager-google-user-messaging-platform", from: "2.1.0")
+        .package(url: "https://github.com/googleads/swift-package-manager-google-interactive-media-ads-ios", exact: "3.23.0"),
+        .package(url: "https://github.com/googleads/swift-package-manager-google-user-messaging-platform", "2.1.0"..<"3.0.0")
     ],
     targets: [
         .binaryTarget(
