@@ -10,7 +10,7 @@
 		</data>
 		<key>BBNativePlayerKit_profile</key>
 		<data>
-		o/POfLDtKGoAwLoU28FvYt8yrkY=
+		O+Ci4angf/pd1aOJH/ILSEYklkQ=
 		</data>
 		<key>Headers/BBNativePlayerKit-Swift.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/BBNativePlayerKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		3Jn26KZIlLp6wJl8boRpGqjQRWo=
+		MFbpmZGxijjL7jStADJPR7zdadM=
 		</data>
 		<key>Modules/BBNativePlayerKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/BBNativePlayerKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		YyAHVvWyWjZmQG6ZP4uhsgof+Co=
+		/ssIIstYhuh8ise9RogxfQINB1k=
 		</data>
 		<key>Modules/BBNativePlayerKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/BBNativePlayerKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Psg8e81deALLs0NaCy6/nyL8KiA=
+		wV7SAvtcjQbOhKAUOjhZWwgZBfU=
 		</data>
 		<key>Modules/BBNativePlayerKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		3Jn26KZIlLp6wJl8boRpGqjQRWo=
+		MFbpmZGxijjL7jStADJPR7zdadM=
 		</data>
 		<key>Modules/BBNativePlayerKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/BBNativePlayerKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		rt4ba9ZjrlvdAV4KR51K69m7lRo=
+		AwYRnJqcj/AMwnL8dlNNISQp0sE=
 		</data>
 		<key>Modules/BBNativePlayerKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/BBNativePlayerKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		NGuc8a6SqgU8xdHdUAyOR9PtDd4=
+		szz/hw2L9CwgrP5+u8LqDRMrJkY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -90,7 +90,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PhsbcFbkdeUNCHQnUbL1ASgy2BP6CbJANjOXcyQciwg=
+			P1aKwwo9jO1t91haeCQEr2a0HgOIgfVoxYfxnrUemVc=
 			</data>
 		</dict>
 		<key>Headers/BBNativePlayerKit-Swift.h</key>
@@ -125,7 +125,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aivbnBT8/57WU+eFJBoJnHOwPVg5Prcu6FFHNT4nwCs=
+			H1l8QikSXTeUbHPtHm7WhQuurAtvKcVjg5eADq77mZ0=
 			</data>
 		</dict>
 		<key>Modules/BBNativePlayerKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -139,7 +139,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0F/iruTGPXW5GOKLfebgPYC4HAD6J3kOlHsCx3acKuQ=
+			/ZbQYjm3wY+1gsmEQJrrkL7q/jsgbpFSE+Mhl4c7eJM=
 			</data>
 		</dict>
 		<key>Modules/BBNativePlayerKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
@@ -153,14 +153,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4Yf4tk63P4NmIBd9FTgBwjfJNROByHWzd1L4IV9eNHM=
+			0aby2mrQXsW6X34bSm6PByk8LPpUHUVKnug+kwf4VTo=
 			</data>
 		</dict>
 		<key>Modules/BBNativePlayerKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aivbnBT8/57WU+eFJBoJnHOwPVg5Prcu6FFHNT4nwCs=
+			H1l8QikSXTeUbHPtHm7WhQuurAtvKcVjg5eADq77mZ0=
 			</data>
 		</dict>
 		<key>Modules/BBNativePlayerKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -174,7 +174,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WmX/SnZFRQTZ+ZAUH/euWkwuchH43OdA2pV3xB1zAmU=
+			3QJyDe7QWQ9O8Khij6cHPA2Do2Og3vF++T4WL+/r/YM=
 			</data>
 		</dict>
 		<key>Modules/BBNativePlayerKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
@@ -188,7 +188,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GxCZ5rCMN+iP0/p0olFQbNTtt3ui3+alAJjRlH5c+io=
+			8xnmNDK2tsD1KBM97Eqsf4PHeRg9VkAPejRM+02XSEQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
