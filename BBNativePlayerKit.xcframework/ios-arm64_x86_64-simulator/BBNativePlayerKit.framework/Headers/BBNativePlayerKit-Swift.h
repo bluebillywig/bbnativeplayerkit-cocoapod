@@ -664,13 +664,13 @@ SWIFT_CLASS("_TtC17BBNativePlayerKit18BBNativeShortsView")
 @end
 
 
-@interface BBNativeShortsView (SWIFT_EXTENSION(BBNativePlayerKit)) <BbnativesharedEventListenerInterface>
-- (void)onEventEventType:(BbnativesharedEventName * _Nonnull)eventType data:(NSDictionary<NSString *, id> * _Nullable)data;
+@interface BBNativeShortsView (SWIFT_EXTENSION(BBNativePlayerKit)) <BBNativePlayerViewDelegate>
+- (void)bbNativePlayerViewWithPlayerView:(BBNativePlayerView * _Nonnull)playerView didSetupWithJsonUrl:(NSString * _Nullable)url;
 @end
 
 
-@interface BBNativeShortsView (SWIFT_EXTENSION(BBNativePlayerKit)) <BBNativePlayerViewDelegate>
-- (void)bbNativePlayerViewWithPlayerView:(BBNativePlayerView * _Nonnull)playerView didSetupWithJsonUrl:(NSString * _Nullable)url;
+@interface BBNativeShortsView (SWIFT_EXTENSION(BBNativePlayerKit)) <BbnativesharedEventListenerInterface>
+- (void)onEventEventType:(BbnativesharedEventName * _Nonnull)eventType data:(NSDictionary<NSString *, id> * _Nullable)data;
 @end
 
 
@@ -767,6 +767,7 @@ SWIFT_PROTOCOL("_TtP17BBNativePlayerKit32ChromeCastViewControllerDelegate_")
 - (void)chromeCastViewControllerWithChromeCastViewController:(MediaViewController * _Nonnull)chromeCastViewController mediaProgress:(float)position;
 - (void)chromeCastViewControllerWithDidRequestDirectCast:(MediaViewController * _Nonnull)chromeCastViewController;
 @end
+
 
 
 
@@ -1452,13 +1453,13 @@ SWIFT_CLASS("_TtC17BBNativePlayerKit18BBNativeShortsView")
 @end
 
 
-@interface BBNativeShortsView (SWIFT_EXTENSION(BBNativePlayerKit)) <BbnativesharedEventListenerInterface>
-- (void)onEventEventType:(BbnativesharedEventName * _Nonnull)eventType data:(NSDictionary<NSString *, id> * _Nullable)data;
+@interface BBNativeShortsView (SWIFT_EXTENSION(BBNativePlayerKit)) <BBNativePlayerViewDelegate>
+- (void)bbNativePlayerViewWithPlayerView:(BBNativePlayerView * _Nonnull)playerView didSetupWithJsonUrl:(NSString * _Nullable)url;
 @end
 
 
-@interface BBNativeShortsView (SWIFT_EXTENSION(BBNativePlayerKit)) <BBNativePlayerViewDelegate>
-- (void)bbNativePlayerViewWithPlayerView:(BBNativePlayerView * _Nonnull)playerView didSetupWithJsonUrl:(NSString * _Nullable)url;
+@interface BBNativeShortsView (SWIFT_EXTENSION(BBNativePlayerKit)) <BbnativesharedEventListenerInterface>
+- (void)onEventEventType:(BbnativesharedEventName * _Nonnull)eventType data:(NSDictionary<NSString *, id> * _Nullable)data;
 @end
 
 
@@ -1555,6 +1556,7 @@ SWIFT_PROTOCOL("_TtP17BBNativePlayerKit32ChromeCastViewControllerDelegate_")
 - (void)chromeCastViewControllerWithChromeCastViewController:(MediaViewController * _Nonnull)chromeCastViewController mediaProgress:(float)position;
 - (void)chromeCastViewControllerWithDidRequestDirectCast:(MediaViewController * _Nonnull)chromeCastViewController;
 @end
+
 
 
 
