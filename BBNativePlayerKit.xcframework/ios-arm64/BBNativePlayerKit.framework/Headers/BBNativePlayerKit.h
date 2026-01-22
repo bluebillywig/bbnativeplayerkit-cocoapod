@@ -16,4 +16,4 @@ FOUNDATION_EXPORT const unsigned char BBNativePlayerKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <BBNativePlayerKit/PublicHeader.h>
 
-
+#import "UMPBridge.h"

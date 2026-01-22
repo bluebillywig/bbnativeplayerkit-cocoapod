@@ -14,7 +14,6 @@ import Swift
 import SwiftUI
 import UIKit.UIDevice
 import UIKit
-import UserMessagingPlatform
 import WebKit
 import _Concurrency
 import _StringProcessing
