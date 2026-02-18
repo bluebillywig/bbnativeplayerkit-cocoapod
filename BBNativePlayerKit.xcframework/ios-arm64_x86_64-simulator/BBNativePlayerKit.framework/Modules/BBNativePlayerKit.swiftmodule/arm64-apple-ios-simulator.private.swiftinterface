@@ -97,6 +97,7 @@ extension BBNativePlayerKit.BBNativePlayerView {
   @objc optional func bbNativePlayerView(didTriggerAdSwipeUp playerView: BBNativePlayerKit.BBNativePlayerView)
   @objc optional func bbNativePlayerView(didTriggerAdSwipeDown playerView: BBNativePlayerKit.BBNativePlayerView)
   @objc optional func bbNativePlayerView(didTriggerUIPanGesture playerView: BBNativePlayerKit.BBNativePlayerView, translation: CoreFoundation.CGPoint, velocity: CoreFoundation.CGPoint, location: CoreFoundation.CGPoint, state: UIKit.UIGestureRecognizer.State)
+  @objc optional func bbNativePlayerView(didCloseModalPlayer playerView: BBNativePlayerKit.BBNativePlayerView)
 }
 extension BBNativePlayerKit.BBNativePlayerView : bbnativeshared.EventListenerInterface {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func onEvent(eventType: bbnativeshared.EventName, data: [Swift.String : Any]?)
@@ -167,6 +168,7 @@ extension BBNativePlayerKit.BBNativeShortsView : BBNativePlayerKit.BBNativePlaye
   public func loadWithClipJson(clipJson: Swift.String, initiator: Swift.String? = "external", autoPlay: Swift.Bool? = true, seekTo: Foundation.NSNumber? = nil)
   public func loadWithClipListJson(clipListJson: Swift.String, initiator: Swift.String? = "external", autoPlay: Swift.Bool? = true, seekTo: Foundation.NSNumber? = nil)
   public func loadWithProjectJson(projectJson: Swift.String, initiator: Swift.String? = "external", autoPlay: Swift.Bool? = true, seekTo: Foundation.NSNumber? = nil)
+  public func updatePlayoutWithJson(playoutJson: Swift.String)
   public func play()
   public func pause()
   public func seek(offsetInSeconds: Foundation.NSNumber)

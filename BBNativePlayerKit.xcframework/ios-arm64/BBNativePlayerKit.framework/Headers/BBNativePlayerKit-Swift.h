@@ -590,6 +590,10 @@ SWIFT_PROTOCOL("_TtP17BBNativePlayerKit26BBNativePlayerViewDelegate_")
 /// \param state UIGestureRecognizer.State
 ///
 - (void)bbNativePlayerViewWithDidTriggerUIPanGesture:(BBNativePlayerView * _Nonnull)playerView translation:(CGPoint)translation velocity:(CGPoint)velocity location:(CGPoint)location state:(enum UIGestureRecognizerState)state;
+/// Modal player was closed (swipe-to-close or programmatic)
+/// \param playerView UIView
+///
+- (void)bbNativePlayerViewWithDidCloseModalPlayer:(BBNativePlayerView * _Nonnull)playerView;
 @end
 
 /// BBNativeRendererView used to display Blue Billywig Renderer

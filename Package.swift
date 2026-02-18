@@ -11,7 +11,7 @@ let package = Package(
         .library(name: "BlueBillywigNativePlayerKit-iOS", targets: ["BBNativePlayerKitTargets"])
     ],
     dependencies: [
-        .package(url: "https://github.com/bluebillywig/bbnativeshared-cocoapod", exact: "8.42.0"),
+        .package(url: "https://github.com/bluebillywig/bbnativeshared-cocoapod", exact: "8.44.0"),
         .package(url: "https://github.com/googleads/swift-package-manager-google-interactive-media-ads-ios", exact: "3.23.0"),
         .package(url: "https://github.com/googleads/swift-package-manager-google-user-messaging-platform", "2.1.0"..<"3.0.0")
     ],
