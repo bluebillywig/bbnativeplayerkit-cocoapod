@@ -105,8 +105,12 @@ extension BBNativePlayerKit.BBNativePlayerView : bbnativeshared.EventListenerInt
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class BBNativePlayerView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency weak public var delegate: (any BBNativePlayerKit.BBNativePlayerViewDelegate)?
   @_Concurrency.MainActor @preconcurrency public var player: BBNativePlayerKit.BBNativePlayerAPI
+  @_Concurrency.MainActor @preconcurrency public var showBackArrow: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public func setupWithJsonUrl(jsonUrl: Swift.String, options: [Swift.String : Any]?)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSublayers(of layer: QuartzCore.CALayer)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
+  @_Concurrency.MainActor @preconcurrency public func presentModal(uiViewContoller: UIKit.UIViewController, animated: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func removeFromSuperview()
   @objc deinit
 }
@@ -162,16 +166,17 @@ extension BBNativePlayerKit.BBNativeShortsView : BBNativePlayerKit.BBNativePlaye
   @objc public func onEvent(eventType: bbnativeshared.EventName, data: [Swift.String : Any]?)
   public func closeModalPlayer()
   public func getModalPlayerView() -> UIKit.UIView?
-  public func loadWithClipId(clipId: Swift.String, initiator: Swift.String? = "external", autoPlay: Swift.Bool? = true, seekTo: Foundation.NSNumber? = nil)
-  public func loadWithClipListId(clipListId: Swift.String, initiator: Swift.String? = "external", autoPlay: Swift.Bool? = true, seekTo: Foundation.NSNumber? = nil)
-  public func loadWithProjectId(projectId: Swift.String, initiator: Swift.String? = "external", autoPlay: Swift.Bool? = true, seekTo: Foundation.NSNumber? = nil)
-  public func loadWithClipJson(clipJson: Swift.String, initiator: Swift.String? = "external", autoPlay: Swift.Bool? = true, seekTo: Foundation.NSNumber? = nil)
-  public func loadWithClipListJson(clipListJson: Swift.String, initiator: Swift.String? = "external", autoPlay: Swift.Bool? = true, seekTo: Foundation.NSNumber? = nil)
-  public func loadWithProjectJson(projectJson: Swift.String, initiator: Swift.String? = "external", autoPlay: Swift.Bool? = true, seekTo: Foundation.NSNumber? = nil)
+  public func loadWithClipId(clipId: Swift.String, initiator: Swift.String? = "external", autoPlay: Swift.Bool? = true, seekTo: Foundation.NSNumber? = nil, context: [Swift.String : Any]? = nil)
+  public func loadWithClipListId(clipListId: Swift.String, initiator: Swift.String? = "external", autoPlay: Swift.Bool? = true, seekTo: Foundation.NSNumber? = nil, context: [Swift.String : Any]? = nil, listOffset: Swift.Int? = nil)
+  public func loadWithProjectId(projectId: Swift.String, initiator: Swift.String? = "external", autoPlay: Swift.Bool? = true, seekTo: Foundation.NSNumber? = nil, context: [Swift.String : Any]? = nil)
+  public func loadWithClipJson(clipJson: Swift.String, initiator: Swift.String? = "external", autoPlay: Swift.Bool? = true, seekTo: Foundation.NSNumber? = nil, context: [Swift.String : Any]? = nil)
+  public func loadWithClipListJson(clipListJson: Swift.String, initiator: Swift.String? = "external", autoPlay: Swift.Bool? = true, seekTo: Foundation.NSNumber? = nil, context: [Swift.String : Any]? = nil)
+  public func loadWithProjectJson(projectJson: Swift.String, initiator: Swift.String? = "external", autoPlay: Swift.Bool? = true, seekTo: Foundation.NSNumber? = nil, context: [Swift.String : Any]? = nil)
   public func updatePlayoutWithJson(playoutJson: Swift.String)
   public func play()
   public func pause()
   public func seek(offsetInSeconds: Foundation.NSNumber)
+  public func seekRelative(offsetInSeconds: Foundation.NSNumber)
   public func autoPlayNextCancel()
   public func collapse()
   public func expand()

@@ -316,7 +316,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 SWIFT_CLASS("_TtC17BBNativePlayerKit18BBNativePlayerView")
 @interface BBNativePlayerView : UIView
 - (void)layoutSublayersOfLayer:(CALayer * _Nonnull)layer;
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 /// :nodoc:
 - (void)observeValueForKeyPath:(NSString * _Nullable)keyPath ofObject:(id _Nullable)object change:(NSDictionary<NSKeyValueChangeKey, id> * _Nullable)change context:(void * _Nullable)context;
@@ -649,12 +649,12 @@ SWIFT_CLASS("_TtC17BBNativePlayerKit18BBNativeShortsView")
 - (void)removeFromSuperview;
 @end
 
-@interface BBNativeShortsView (SWIFT_EXTENSION(BBNativePlayerKit)) <BBNativePlayerViewDelegate>
-- (void)bbNativePlayerViewWithPlayerView:(BBNativePlayerView * _Nonnull)playerView didSetupWithJsonUrl:(NSString * _Nullable)url;
-@end
-
 @interface BBNativeShortsView (SWIFT_EXTENSION(BBNativePlayerKit)) <BbnativesharedEventListenerInterface>
 - (void)onEventEventType:(BbnativesharedEventName * _Nonnull)eventType data:(NSDictionary<NSString *, id> * _Nullable)data;
+@end
+
+@interface BBNativeShortsView (SWIFT_EXTENSION(BBNativePlayerKit)) <BBNativePlayerViewDelegate>
+- (void)bbNativePlayerViewWithPlayerView:(BBNativePlayerView * _Nonnull)playerView didSetupWithJsonUrl:(NSString * _Nullable)url;
 @end
 
 /// :nodoc:
@@ -1072,7 +1072,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 SWIFT_CLASS("_TtC17BBNativePlayerKit18BBNativePlayerView")
 @interface BBNativePlayerView : UIView
 - (void)layoutSublayersOfLayer:(CALayer * _Nonnull)layer;
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 /// :nodoc:
 - (void)observeValueForKeyPath:(NSString * _Nullable)keyPath ofObject:(id _Nullable)object change:(NSDictionary<NSKeyValueChangeKey, id> * _Nullable)change context:(void * _Nullable)context;
@@ -1405,12 +1405,12 @@ SWIFT_CLASS("_TtC17BBNativePlayerKit18BBNativeShortsView")
 - (void)removeFromSuperview;
 @end
 
-@interface BBNativeShortsView (SWIFT_EXTENSION(BBNativePlayerKit)) <BBNativePlayerViewDelegate>
-- (void)bbNativePlayerViewWithPlayerView:(BBNativePlayerView * _Nonnull)playerView didSetupWithJsonUrl:(NSString * _Nullable)url;
-@end
-
 @interface BBNativeShortsView (SWIFT_EXTENSION(BBNativePlayerKit)) <BbnativesharedEventListenerInterface>
 - (void)onEventEventType:(BbnativesharedEventName * _Nonnull)eventType data:(NSDictionary<NSString *, id> * _Nullable)data;
+@end
+
+@interface BBNativeShortsView (SWIFT_EXTENSION(BBNativePlayerKit)) <BBNativePlayerViewDelegate>
+- (void)bbNativePlayerViewWithPlayerView:(BBNativePlayerView * _Nonnull)playerView didSetupWithJsonUrl:(NSString * _Nullable)url;
 @end
 
 /// :nodoc:
