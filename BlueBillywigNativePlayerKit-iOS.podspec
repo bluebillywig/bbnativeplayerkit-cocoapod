@@ -4,10 +4,13 @@ Pod::Spec.new do |spec|
 
   spec.name         = "BlueBillywigNativePlayerKit-iOS"
   spec.version          = '8.46.3'
-  spec.summary      = "Blue Billywig native player kit"
+  spec.summary      = "iOS SDK for playing Blue Billywig video content with native playback"
 
   spec.description  = <<-DESC
-  Blue Billywig native player kit is used to play Blue Billywig mediaclips using the native ios player
+  The Blue Billywig Native Player Kit is an iOS SDK for playing video content from
+  the Blue Billywig Online Video Platform. It provides native AVFoundation-based
+  playback with support for IMA advertising, Chromecast, Picture-in-Picture, AirPlay,
+  vertical video (Shorts), and a full playback control API with event-driven delegates.
                    DESC
 
   spec.homepage     = "https://www.bluebillywig.com/"
