@@ -10,6 +10,7 @@ import DeveloperToolsSupport
 import Foundation
 import GoogleCast
 import GoogleInteractiveMediaAds
+import Network
 import Swift
 import SwiftUI
 import UIKit.UIDevice
@@ -128,6 +129,11 @@ extension BBNativePlayerKit.BBNativePlayerView : @preconcurrency bbnativeshared.
   @_Concurrency.MainActor weak public var delegate: (any BBNativePlayerKit.BBNativePlayerViewDelegate)?
   @_Concurrency.MainActor public var player: BBNativePlayerKit.BBNativePlayerAPI
   @_Concurrency.MainActor public var useFullscreenWindow: Swift.Bool
+  @_Concurrency.MainActor public func resumeCastSession()
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor public func setCastMode(_ mode: Swift.String?)
+  #endif
+  @_Concurrency.MainActor public func endCastSession()
   @_Concurrency.MainActor public var showBackArrow: Swift.Bool
   #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public func setupWithJsonUrl(jsonUrl: Swift.String, options: [Swift.String : Any]?)
@@ -210,6 +216,7 @@ extension BBNativePlayerKit.BBNativeShortsView : BBNativePlayerKit.BBNativePlaye
   #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public func getModalPlayerView() -> UIKit.UIView?
   #endif
+  @_Concurrency.MainActor public func unload()
   #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public func loadWithClipId(clipId: Swift.String, initiator: Swift.String? = "external", autoPlay: Swift.Bool? = true, seekTo: Foundation.NSNumber? = nil, context: [Swift.String : Any]? = nil)
   #endif
@@ -425,6 +432,7 @@ extension BBNativePlayerKit.BBNativeRendererView : BBNativePlayerKit.BBNativePla
   @_Concurrency.MainActor public func __destruct()
   @_Concurrency.MainActor public func play()
   @_Concurrency.MainActor public func pause()
+  @_Concurrency.MainActor public func endSession()
   @_Concurrency.MainActor public func seekTo(time: Swift.Double)
   @_Concurrency.MainActor public func mute()
   @_Concurrency.MainActor public func unMute()
