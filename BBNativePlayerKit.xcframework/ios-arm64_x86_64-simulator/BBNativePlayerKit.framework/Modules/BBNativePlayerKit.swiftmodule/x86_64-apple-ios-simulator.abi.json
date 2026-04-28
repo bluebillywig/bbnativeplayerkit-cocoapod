@@ -18676,308 +18676,322 @@
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2126,
+      "offset": 2144,
+      "length": 21,
+      "value": "\"audiodescriptionoff\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2311,
+      "length": 20,
+      "value": "\"audiodescriptionon\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2461,
       "length": 12,
       "value": "\"castingoff\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2266,
+      "offset": 2601,
       "length": 11,
       "value": "\"castingon\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2397,
+      "offset": 2732,
       "length": 7,
       "value": "\"check\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2531,
+      "offset": 2866,
       "length": 11,
       "value": "\"check_old\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2672,
+      "offset": 3007,
       "length": 12,
       "value": "\"chromecast\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2806,
+      "offset": 3141,
       "length": 8,
       "value": "\"circle\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2934,
+      "offset": 3269,
       "length": 7,
       "value": "\"close\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3072,
+      "offset": 3407,
       "length": 13,
       "value": "\"close-arrow\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3216,
+      "offset": 3551,
       "length": 13,
       "value": "\"close-small\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3373,
+      "offset": 3708,
       "length": 19,
       "value": "\"fullscreenmodeoff\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3534,
+      "offset": 3869,
       "length": 18,
       "value": "\"fullscreenmodeon\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3689,
+      "offset": 4024,
       "length": 16,
       "value": "\"gearshape.fill\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3840,
+      "offset": 4175,
       "length": 15,
       "value": "\"gobackward.15\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3988,
+      "offset": 4323,
       "length": 14,
       "value": "\"goforward.15\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4122,
+      "offset": 4457,
       "length": 7,
       "value": "\"pause\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4247,
+      "offset": 4582,
       "length": 6,
       "value": "\"play\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4384,
+      "offset": 4719,
       "length": 13,
       "value": "\"play.circle\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4537,
+      "offset": 4872,
       "length": 18,
       "value": "\"play.circle.fill\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4713,
+      "offset": 5048,
       "length": 28,
       "value": "\"play.circle.fill.pdf.ios12\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4890,
+      "offset": 5225,
       "length": 23,
       "value": "\"play.circle.pdf.ios12\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5040,
+      "offset": 5375,
       "length": 11,
       "value": "\"play.fill\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5178,
+      "offset": 5513,
       "length": 11,
       "value": "\"play_next\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5326,
+      "offset": 5661,
       "length": 16,
       "value": "\"playback speed\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5479,
+      "offset": 5814,
       "length": 16,
       "value": "\"playlist_white\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5641,
+      "offset": 5976,
       "length": 21,
       "value": "\"progress_bar_circle\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5786,
+      "offset": 6121,
       "length": 9,
       "value": "\"quality\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5930,
+      "offset": 6265,
       "length": 15,
       "value": "\"related_clips\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6089,
+      "offset": 6424,
       "length": 20,
       "value": "\"related_items_icon\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6238,
+      "offset": 6573,
       "length": 12,
       "value": "\"reload_big\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6383,
+      "offset": 6718,
       "length": 14,
       "value": "\"reload_small\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6527,
+      "offset": 6862,
       "length": 12,
       "value": "\"rightarrow\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6681,
+      "offset": 7016,
       "length": 19,
       "value": "\"rode.bolletje.pdf\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6826,
+      "offset": 7161,
       "length": 10,
       "value": "\"settings\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6956,
+      "offset": 7291,
       "length": 7,
       "value": "\"share\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7096,
+      "offset": 7431,
       "length": 14,
       "value": "\"shorts-xmark\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7277,
+      "offset": 7612,
       "length": 32,
       "value": "\"smallcircle.filled.circle.fill\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7453,
+      "offset": 7788,
       "length": 20,
       "value": "\"speaker.slash.fill\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7618,
+      "offset": 7953,
       "length": 21,
       "value": "\"speaker.wave.3.fill\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7773,
+      "offset": 8108,
       "length": 14,
       "value": "\"subtitlesoff\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7919,
+      "offset": 8254,
       "length": 13,
       "value": "\"subtitleson\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8061,
+      "offset": 8396,
       "length": 12,
       "value": "\"volume-off\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8200,
+      "offset": 8535,
       "length": 11,
       "value": "\"volume-on\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8339,
+      "offset": 8674,
       "length": 11,
       "value": "\"volumeoff\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/BBNativePlayerKit-frxhdncwimogpehimggtueidqzqp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BBNativePlayerKit\/IntermediateBuildFilesPath\/BBNativePlayerKit.build\/Release-iphonesimulator\/BBNativePlayerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8476,
+      "offset": 8811,
       "length": 10,
       "value": "\"volumeon\""
     }
