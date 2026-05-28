@@ -1,15 +1,15 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.3 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 6 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -module-name BBNativePlayerKit
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+// swift-compiler-version: Apple Swift version 6.3.1 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 6 -O -enable-experimental-feature DebugDescriptionMacro -module-name BBNativePlayerKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
 import AVFoundation
 import AVKit
 @_exported import BBNativePlayerKit
 import CoreData
 import DeveloperToolsSupport
 import Foundation
-import GoogleCast
-import GoogleInteractiveMediaAds
+@preconcurrency import GoogleCast
+@preconcurrency import GoogleInteractiveMediaAds
 import Network
 import Swift
 import SwiftUI
@@ -19,7 +19,7 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-import bbnativeshared
+@preconcurrency import bbnativeshared
 import os
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor public class BBNativePlayerViewController : UIKit.UIViewController {
   @_Concurrency.MainActor weak public var inViewController: bbnativeshared.InViewController?
@@ -43,32 +43,20 @@ extension BBNativePlayerKit.BBNativePlayerViewController : UIKit.UIGestureRecogn
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldReceive touch: UIKit.UITouch) -> Swift.Bool
 }
 extension BBNativePlayerKit.BBNativePlayerViewController : @preconcurrency bbnativeshared.EventListenerInterface {
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @objc dynamic public func onEvent(eventType: bbnativeshared.EventName, data: [Swift.String : Any]?)
-  #endif
 }
 extension BBNativePlayerKit.BBNativePlayerViewController : @preconcurrency GoogleCast.GCKDiscoveryManagerListener {
   @_Concurrency.MainActor @objc dynamic public func didUpdateDeviceList()
 }
 extension BBNativePlayerKit.BBNativePlayerView {
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public func callApiMethod(method: bbnativeshared.ApiMethod, args: [Swift.String : Any?]?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public func setApiProperty(property: bbnativeshared.ApiProperty, value: Any?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public func getApiProperty(property: bbnativeshared.ApiProperty) -> Any?
-  #endif
   @_Concurrency.MainActor public func destroy()
 }
 @_Concurrency.MainActor @objc public protocol BBNativePlayerViewDelegate {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor optional func bbNativePlayerView(playerView: BBNativePlayerKit.BBNativePlayerView, didSetupWithJsonUrl url: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor optional func bbNativePlayerView(playerView: BBNativePlayerKit.BBNativePlayerView, didFailWithError error: Swift.String?)
-  #endif
   @objc @_Concurrency.MainActor optional func bbNativePlayerView(playerView: BBNativePlayerKit.BBNativePlayerView, didTriggerMediaClipLoaded data: bbnativeshared.MediaClip)
   @objc @_Concurrency.MainActor optional func bbNativePlayerView(didTriggerApiReady playerView: BBNativePlayerKit.BBNativePlayerView)
   @objc @_Concurrency.MainActor optional func bbNativePlayerView(didTriggerViewStarted playerView: BBNativePlayerKit.BBNativePlayerView)
@@ -87,15 +75,9 @@ extension BBNativePlayerKit.BBNativePlayerView {
   @objc @_Concurrency.MainActor optional func bbNativePlayerView(playerView: BBNativePlayerKit.BBNativePlayerView, didTriggerSeeked seekOffset: Swift.Double)
   @objc @_Concurrency.MainActor optional func bbNativePlayerView(didTriggerStall playerView: BBNativePlayerKit.BBNativePlayerView)
   @objc @_Concurrency.MainActor optional func bbNativePlayerView(didTriggerMediaClipFailed playerView: BBNativePlayerKit.BBNativePlayerView)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor optional func bbNativePlayerView(playerView: BBNativePlayerKit.BBNativePlayerView, didTriggerPhaseChange phase: bbnativeshared.Phase?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor optional func bbNativePlayerView(playerView: BBNativePlayerKit.BBNativePlayerView, didTriggerStateChange state: bbnativeshared.State?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor optional func bbNativePlayerView(playerView: BBNativePlayerKit.BBNativePlayerView, didTriggerModeChange mode: Swift.String?)
-  #endif
   @objc @_Concurrency.MainActor optional func bbNativePlayerView(didTriggerFullscreen playerView: BBNativePlayerKit.BBNativePlayerView)
   @objc @_Concurrency.MainActor optional func bbNativePlayerView(didTriggerRetractFullscreen playerView: BBNativePlayerKit.BBNativePlayerView)
   @objc @_Concurrency.MainActor optional func bbNativePlayerView(playerView: BBNativePlayerKit.BBNativePlayerView, didTriggerCustomStatistics ident: Swift.String, ev: Swift.String, aux: [Swift.String : Swift.String])
@@ -103,9 +85,7 @@ extension BBNativePlayerKit.BBNativePlayerView {
   @objc @_Concurrency.MainActor optional func bbNativePlayerView(didRequestExpand playerView: BBNativePlayerKit.BBNativePlayerView)
   @objc @_Concurrency.MainActor optional func bbNativePlayerView(didTriggerAdLoaded playerView: BBNativePlayerKit.BBNativePlayerView)
   @objc @_Concurrency.MainActor optional func bbNativePlayerView(didTriggerAdNotFound playerView: BBNativePlayerKit.BBNativePlayerView)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor optional func bbNativePlayerView(playerView: BBNativePlayerKit.BBNativePlayerView, didTriggerAdError error: Swift.String?)
-  #endif
   @objc @_Concurrency.MainActor optional func bbNativePlayerView(didTriggerAdStarted playerView: BBNativePlayerKit.BBNativePlayerView)
   @objc @_Concurrency.MainActor optional func bbNativePlayerView(didTriggerAdQuartile1 playerView: BBNativePlayerKit.BBNativePlayerView)
   @objc @_Concurrency.MainActor optional func bbNativePlayerView(didTriggerAdQuartile2 playerView: BBNativePlayerKit.BBNativePlayerView)
@@ -121,29 +101,21 @@ extension BBNativePlayerKit.BBNativePlayerView {
   @objc @_Concurrency.MainActor optional func bbNativePlayerView(didCloseModalPlayer playerView: BBNativePlayerKit.BBNativePlayerView)
 }
 extension BBNativePlayerKit.BBNativePlayerView : @preconcurrency bbnativeshared.EventListenerInterface {
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @objc dynamic public func onEvent(eventType: bbnativeshared.EventName, data: [Swift.String : Any]?)
-  #endif
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor public class BBNativePlayerView : UIKit.UIView, UIKit.UIGestureRecognizerDelegate {
   @_Concurrency.MainActor weak public var delegate: (any BBNativePlayerKit.BBNativePlayerViewDelegate)?
   @_Concurrency.MainActor public var player: BBNativePlayerKit.BBNativePlayerAPI
   @_Concurrency.MainActor public var useFullscreenWindow: Swift.Bool
   @_Concurrency.MainActor public func resumeCastSession()
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public func setCastMode(_ mode: Swift.String?)
-  #endif
   @_Concurrency.MainActor public func endCastSession()
   @_Concurrency.MainActor public var showBackArrow: Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public func setupWithJsonUrl(jsonUrl: Swift.String, options: [Swift.String : Any]?)
-  #endif
   @_Concurrency.MainActor @objc override dynamic public func layoutSublayers(of layer: QuartzCore.CALayer)
   @_Concurrency.MainActor @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor @preconcurrency @objc public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldReceive touch: UIKit.UITouch) -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
-  #endif
   @_Concurrency.MainActor public func presentModal(uiViewContoller: UIKit.UIViewController, animated: Swift.Bool)
   @_Concurrency.MainActor @objc override dynamic public func removeFromSuperview()
   @objc deinit
@@ -174,67 +146,39 @@ extension BBNativePlayerKit.BBNativeShortsViewController : UIKit.UIGestureRecogn
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldReceive touch: UIKit.UITouch) -> Swift.Bool
 }
 extension BBNativePlayerKit.BBNativeShortsViewController : @preconcurrency bbnativeshared.EventListenerInterface {
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @objc dynamic public func onEvent(eventType: bbnativeshared.EventName, data: [Swift.String : Any]?)
-  #endif
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor public class BBNativeShortsView : UIKit.UIView {
   @_Concurrency.MainActor weak public var delegate: (any BBNativePlayerKit.BBNativeShortsViewDelegate)?
   @_Concurrency.MainActor public func destroy()
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public var playerViewDelegate: (any BBNativePlayerKit.BBNativePlayerViewDelegate)? {
     get
     set
   }
-  #endif
   @_Concurrency.MainActor @objc override dynamic public func removeFromSuperview()
   @objc deinit
 }
 extension BBNativePlayerKit.BBNativeShortsView : @preconcurrency bbnativeshared.EventListenerInterface {
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @objc dynamic public func onEvent(eventType: bbnativeshared.EventName, data: [Swift.String : Any]?)
-  #endif
 }
 extension BBNativePlayerKit.BBNativeShortsView : BBNativePlayerKit.BBNativePlayerViewDelegate {
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @objc dynamic public func bbNativePlayerView(playerView: BBNativePlayerKit.BBNativePlayerView, didSetupWithJsonUrl url: Swift.String?)
-  #endif
 }
 @_Concurrency.MainActor @objc public protocol BBNativeRendererViewDelegate {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor optional func bbNativeRendererView(rendererView: BBNativePlayerKit.BBNativeRendererView, didSetupWithJsonUrl url: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor optional func bbNativeRendererView(rendererView: BBNativePlayerKit.BBNativeRendererView, didFailWithError error: Swift.String?)
-  #endif
 }
 @_hasMissingDesignatedInitializers @_Concurrency.MainActor public class BBNativePlayerAPI : @preconcurrency bbnativeshared.EventListenerInterface {
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @objc public func onEvent(eventType: bbnativeshared.EventName, data: [Swift.String : Any]?)
-  #endif
   @_Concurrency.MainActor public func closeModalPlayer()
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public func getModalPlayerView() -> UIKit.UIView?
-  #endif
   @_Concurrency.MainActor public func unload()
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public func loadWithClipId(clipId: Swift.String, initiator: Swift.String? = "external", autoPlay: Swift.Bool? = true, seekTo: Foundation.NSNumber? = nil, context: [Swift.String : Any]? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public func loadWithClipListId(clipListId: Swift.String, initiator: Swift.String? = "external", autoPlay: Swift.Bool? = true, seekTo: Foundation.NSNumber? = nil, context: [Swift.String : Any]? = nil, listOffset: Swift.Int? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public func loadWithProjectId(projectId: Swift.String, initiator: Swift.String? = "external", autoPlay: Swift.Bool? = true, seekTo: Foundation.NSNumber? = nil, context: [Swift.String : Any]? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public func loadWithClipJson(clipJson: Swift.String, initiator: Swift.String? = "external", autoPlay: Swift.Bool? = true, seekTo: Foundation.NSNumber? = nil, context: [Swift.String : Any]? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public func loadWithClipListJson(clipListJson: Swift.String, initiator: Swift.String? = "external", autoPlay: Swift.Bool? = true, seekTo: Foundation.NSNumber? = nil, context: [Swift.String : Any]? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public func loadWithProjectJson(projectJson: Swift.String, initiator: Swift.String? = "external", autoPlay: Swift.Bool? = true, seekTo: Foundation.NSNumber? = nil, context: [Swift.String : Any]? = nil)
-  #endif
   @_Concurrency.MainActor public func updatePlayoutWithJson(playoutJson: Swift.String)
   @_Concurrency.MainActor public func play()
   @_Concurrency.MainActor public func pause()
@@ -245,174 +189,112 @@ extension BBNativePlayerKit.BBNativeShortsView : BBNativePlayerKit.BBNativePlaye
   @_Concurrency.MainActor public func expand()
   @_Concurrency.MainActor public func enterFullScreen()
   @_Concurrency.MainActor public func exitFullScreen()
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public var phase: bbnativeshared.Phase? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public var state: bbnativeshared.State? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public var mode: Swift.String? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public var playoutData: bbnativeshared.Playout? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public var projectData: bbnativeshared.Project? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public var clipData: bbnativeshared.MediaClip? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public var relatedItems: [any bbnativeshared.ContentItemInterface]? {
     get
     set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public var volume: Swift.Float? {
     get
     set
   }
-  #endif
   @_Concurrency.MainActor public func setVolume(volume: Swift.Double, userAction: Swift.Bool = false)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public var muted: Swift.Bool? {
     get
     set
   }
-  #endif
   @_Concurrency.MainActor public func setMuted(muted: Swift.Bool, userAction: Swift.Bool = false)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public var inView: Swift.Bool? {
     get
     set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public var isCasting: Swift.Bool? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public var duration: Swift.Double? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public var createChromeCastButton: GoogleCast.GCKUICastButton? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public var getChromeCastMiniControlsView: UIKit.UIView? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public var adMediaWidth: Swift.Int? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public var adMediaHeight: Swift.Int? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public var fullscreen: Swift.Bool? {
     get
   }
-  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @_Concurrency.MainActor public class ChromeCastHelper {
   @_Concurrency.MainActor public static let shared: BBNativePlayerKit.ChromeCastHelper
   @_Concurrency.MainActor public var initialized: Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public func createChromeCastButton(frame: CoreFoundation.CGRect) -> GoogleCast.GCKUICastButton?
-  #endif
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor public class BBNativeRendererView : UIKit.UIView {
   @_Concurrency.MainActor weak public var delegate: (any BBNativePlayerKit.BBNativeRendererViewDelegate)?
   @_Concurrency.MainActor public func __destruct()
   @_Concurrency.MainActor public func destroy()
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public var playerViewDelegate: (any BBNativePlayerKit.BBNativePlayerViewDelegate)? {
     get
     set
   }
-  #endif
   @_Concurrency.MainActor @objc override dynamic public func removeFromSuperview()
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public func bootstrap(config: [Swift.String : Swift.String], element: UIKit.UIView? = nil, playoutOverrides: [Swift.String : Any]?)
-  #endif
   @objc deinit
 }
 extension BBNativePlayerKit.BBNativeRendererView : @preconcurrency bbnativeshared.EventListenerInterface {
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @objc dynamic public func onEvent(eventType: bbnativeshared.EventName, data: [Swift.String : Any]?)
-  #endif
 }
 extension BBNativePlayerKit.BBNativeRendererView : BBNativePlayerKit.BBNativePlayerViewDelegate {
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @objc dynamic public func bbNativePlayerView(playerView: BBNativePlayerKit.BBNativePlayerView, didSetupWithJsonUrl url: Swift.String?)
-  #endif
 }
 @_hasMissingDesignatedInitializers @_Concurrency.MainActor public class BBNativePlayer {
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public static func createPlayerView(uiViewController: UIKit.UIViewController, frame: CoreFoundation.CGRect, jsonUrl: Swift.String, options: [Swift.String : Any]?) -> BBNativePlayerKit.BBNativePlayerView
-  #endif
   @_Concurrency.MainActor public static func createPlayerView(uiViewController: UIKit.UIViewController, frame: CoreFoundation.CGRect, jsonUrl: Swift.String) -> BBNativePlayerKit.BBNativePlayerView
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public static func createModalPlayerView(uiViewContoller: UIKit.UIViewController, jsonUrl: Swift.String, options: [Swift.String : Any]?) -> BBNativePlayerKit.BBNativePlayerView
-  #endif
   @_Concurrency.MainActor public static func createModalPlayerView(uiViewContoller: UIKit.UIViewController, jsonUrl: Swift.String) -> BBNativePlayerKit.BBNativePlayerView
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public static func createJsonEmbedUrl(baseUrl: Swift.String, appIndicator: Swift.String, appId: Swift.String, contentIndicator: Swift.String? = nil, contentId: Swift.String? = nil) -> Swift.String
-  #endif
   @objc deinit
 }
 @_Concurrency.MainActor @objc public protocol BBNativeShortsViewDelegate {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor optional func bbNativeShortsView(shortsView: BBNativePlayerKit.BBNativeShortsView, didSetupWithJsonUrl url: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor optional func bbNativeShortsView(shortsView: BBNativePlayerKit.BBNativeShortsView, didFailWithError error: Swift.String?)
-  #endif
   @objc @_Concurrency.MainActor optional func bbNativeShortsView(shortsView: BBNativePlayerKit.BBNativeShortsView, didTriggerResize width: Swift.Int, height: Swift.Int)
 }
 @_hasMissingDesignatedInitializers @_Concurrency.MainActor public class BBNativeRenderer {
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public static func createRendererView(uiViewController: UIKit.UIViewController, frame: CoreFoundation.CGRect, jsonUrl: Swift.String, options: [Swift.String : Any]?) -> BBNativePlayerKit.BBNativeRendererView
-  #endif
   @_Concurrency.MainActor public static func createRendererView(uiViewController: UIKit.UIViewController, frame: CoreFoundation.CGRect, jsonUrl: Swift.String) -> BBNativePlayerKit.BBNativeRendererView
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public static func createJsonEmbedUrl(baseUrl: Swift.String, appIndicator: Swift.String, appId: Swift.String, contentIndicator: Swift.String? = nil, contentId: Swift.String? = nil) -> Swift.String
-  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @_Concurrency.MainActor public class BBNativeShorts {
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public static func createShortsView(uiViewController: UIKit.UIViewController, frame: CoreFoundation.CGRect, jsonUrl: Swift.String, options: [Swift.String : Any]?) -> BBNativePlayerKit.BBNativeShortsView
-  #endif
   @_Concurrency.MainActor public static func createShortsView(uiViewController: UIKit.UIViewController, frame: CoreFoundation.CGRect, jsonUrl: Swift.String) -> BBNativePlayerKit.BBNativeShortsView
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public static func createJsonEmbedUrl(baseUrl: Swift.String, appIndicator: Swift.String, appId: Swift.String, contentIndicator: Swift.String? = nil, contentId: Swift.String? = nil) -> Swift.String
-  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(MediaViewController) @_Concurrency.MainActor public class ChromeCastViewController : UIKit.UIViewController, @preconcurrency GoogleCast.GCKSessionManagerListener, @preconcurrency GoogleCast.GCKRemoteMediaClientListener, @preconcurrency GoogleCast.GCKLoggerDelegate, @preconcurrency GoogleCast.GCKRequestDelegate, @preconcurrency GoogleCast.GCKUIMiniMediaControlsViewControllerDelegate {
@@ -436,51 +318,33 @@ extension BBNativePlayerKit.BBNativeRendererView : BBNativePlayerKit.BBNativePla
   @_Concurrency.MainActor public func seekTo(time: Swift.Double)
   @_Concurrency.MainActor public func mute()
   @_Concurrency.MainActor public func unMute()
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public func setMessageLabel(deviceName: Swift.String?, isThisPlayer: Swift.Bool)
-  #endif
   @_Concurrency.MainActor @objc public func sessionManager(_: GoogleCast.GCKSessionManager, willStart session: GoogleCast.GCKSession)
   @_Concurrency.MainActor @objc public func sessionManager(_: GoogleCast.GCKSessionManager, didStart session: GoogleCast.GCKSession)
   @_Concurrency.MainActor @objc public func sessionManager(_: GoogleCast.GCKSessionManager, didResumeSession session: GoogleCast.GCKSession)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @objc public func sessionManager(_: GoogleCast.GCKSessionManager, didEnd _: GoogleCast.GCKSession, withError error: (any Swift.Error)?)
-  #endif
   @_Concurrency.MainActor @objc public func sessionManager(_: GoogleCast.GCKSessionManager, didStart session: GoogleCast.GCKCastSession)
   @_Concurrency.MainActor @objc public func logMessage(_ message: Swift.String, at level: GoogleCast.GCKLoggerLevel, fromFunction function: Swift.String, location: Swift.String)
   @_Concurrency.MainActor @objc public func requestDidComplete(_ request: GoogleCast.GCKRequest)
   @_Concurrency.MainActor @objc public func miniMediaControlsViewController(_ miniMediaControlsViewController: GoogleCast.GCKUIMiniMediaControlsViewController, shouldAppear: Swift.Bool)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @objc public func remoteMediaClient(_: GoogleCast.GCKRemoteMediaClient, didUpdate mediaStatus: GoogleCast.GCKMediaStatus?)
-  #endif
   @_Concurrency.MainActor public func playerIsModal()
   @objc deinit
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor public class BBNativeRendererViewController : UIKit.UIViewController {
   @objc deinit
 }
 extension BBNativePlayerKit.BBNativeRendererViewController : @preconcurrency bbnativeshared.EventListenerInterface {
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @objc dynamic public func onEvent(eventType: bbnativeshared.EventName, data: [Swift.String : Any]?)
-  #endif
 }
 @_Concurrency.MainActor @objc public protocol ChromeCastViewControllerDelegate {
   @objc @_Concurrency.MainActor func chromeCastViewController(chromeCastViewController: BBNativePlayerKit.ChromeCastViewController, sessionStarted session: GoogleCast.GCKSession)
   @objc @_Concurrency.MainActor func chromeCastViewController(chromeCastViewController: BBNativePlayerKit.ChromeCastViewController, sessionResumed session: GoogleCast.GCKSession)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor func chromeCastViewController(chromeCastViewController: BBNativePlayerKit.ChromeCastViewController, sessionEnded resumeInAVPlayer: Swift.Bool, withError: (any Swift.Error)?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor func chromeCastViewController(chromeCastViewController: BBNativePlayerKit.ChromeCastViewController, sessionFailedToStart withError: (any Swift.Error)?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor func chromeCastViewController(chromeCastViewController: BBNativePlayerKit.ChromeCastViewController, sessionFailedToResume withError: (any Swift.Error)?)
-  #endif
   @objc @_Concurrency.MainActor func chromeCastViewController(mediaStatusStarted chromeCastViewController: BBNativePlayerKit.ChromeCastViewController, sessionId: Swift.String)
   @objc @_Concurrency.MainActor func chromeCastViewController(mediaStatusFinished chromeCastViewController: BBNativePlayerKit.ChromeCastViewController)
   @objc @_Concurrency.MainActor func chromeCastViewController(mediaStatusError chromeCastViewController: BBNativePlayerKit.ChromeCastViewController)
