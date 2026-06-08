@@ -49,6 +49,8 @@ extension BBNativePlayerKit.BBNativePlayerViewController : @preconcurrency Googl
   @_Concurrency.MainActor @objc dynamic public func didUpdateDeviceList()
 }
 extension BBNativePlayerKit.BBNativePlayerView {
+  @_Concurrency.MainActor public static func lastKnownPosition(forClipId clipId: Swift.String) -> Swift.Double?
+  @_Concurrency.MainActor public static func isFinished(forClipId clipId: Swift.String) -> Swift.Bool
   @_Concurrency.MainActor public func callApiMethod(method: bbnativeshared.ApiMethod, args: [Swift.String : Any?]?)
   @_Concurrency.MainActor public func setApiProperty(property: bbnativeshared.ApiProperty, value: Any?)
   @_Concurrency.MainActor public func getApiProperty(property: bbnativeshared.ApiProperty) -> Any?

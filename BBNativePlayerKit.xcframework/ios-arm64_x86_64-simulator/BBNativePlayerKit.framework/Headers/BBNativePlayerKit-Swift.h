@@ -382,7 +382,9 @@ extern "C" {
 /// PlayerView used to play media from the Blue Billywig OVP
 SWIFT_CLASS("_TtC17BBNativePlayerKit18BBNativePlayerView")
 @interface BBNativePlayerView : UIView <UIGestureRecognizerDelegate>
+/// :nodoc:
 - (void)layoutSublayersOfLayer:(CALayer * _Nonnull)layer;
+/// :nodoc:
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldReceiveTouch:(UITouch * _Nonnull)touch SWIFT_WARN_UNUSED_RESULT;
@@ -1204,7 +1206,9 @@ extern "C" {
 /// PlayerView used to play media from the Blue Billywig OVP
 SWIFT_CLASS("_TtC17BBNativePlayerKit18BBNativePlayerView")
 @interface BBNativePlayerView : UIView <UIGestureRecognizerDelegate>
+/// :nodoc:
 - (void)layoutSublayersOfLayer:(CALayer * _Nonnull)layer;
+/// :nodoc:
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldReceiveTouch:(UITouch * _Nonnull)touch SWIFT_WARN_UNUSED_RESULT;
