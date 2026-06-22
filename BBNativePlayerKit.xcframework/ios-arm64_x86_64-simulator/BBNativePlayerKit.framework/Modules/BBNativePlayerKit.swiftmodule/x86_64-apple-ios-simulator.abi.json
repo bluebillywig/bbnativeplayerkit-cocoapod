@@ -7617,9 +7617,11 @@
             "usr": "s:17BBNativePlayerKit0aB3APIC22createChromeCastButtonSo09GCKUICastH0CSgvp",
             "mangledName": "$s17BBNativePlayerKit0aB3APIC22createChromeCastButtonSo09GCKUICastH0CSgvp",
             "moduleName": "BBNativePlayerKit",
+            "deprecated": true,
             "declAttributes": [
               "Custom",
               "AccessControl",
+              "Available",
               "RawDocComment"
             ],
             "accessors": [
@@ -7675,9 +7677,11 @@
             "usr": "s:17BBNativePlayerKit0aB3APIC29getChromeCastMiniControlsViewSo6UIViewCSgvp",
             "mangledName": "$s17BBNativePlayerKit0aB3APIC29getChromeCastMiniControlsViewSo6UIViewCSgvp",
             "moduleName": "BBNativePlayerKit",
+            "deprecated": true,
             "declAttributes": [
               "Custom",
               "AccessControl",
+              "Available",
               "RawDocComment"
             ],
             "accessors": [
@@ -8123,6 +8127,37 @@
             "declAttributes": [
               "Custom",
               "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getChromeCastMiniControlsView",
+            "printedName": "getChromeCastMiniControlsView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17BBNativePlayerKit16ChromeCastHelperC03getdE16MiniControlsViewSo6UIViewCSgyF",
+            "mangledName": "$s17BBNativePlayerKit16ChromeCastHelperC03getdE16MiniControlsViewSo6UIViewCSgyF",
+            "moduleName": "BBNativePlayerKit",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -8996,6 +9031,13 @@
       },
       {
         "kind": "Import",
+        "name": "GoogleCast",
+        "printedName": "GoogleCast",
+        "declKind": "Import",
+        "moduleName": "BBNativePlayerKit"
+      },
+      {
+        "kind": "Import",
         "name": "bbnativeshared",
         "printedName": "bbnativeshared",
         "declKind": "Import",
@@ -9210,6 +9252,78 @@
             "declKind": "Func",
             "usr": "s:17BBNativePlayerKit0aB0C011createModalB4View02uiF9Contoller7jsonUrlAA0abF0CSo16UIViewControllerC_SStFZ",
             "mangledName": "$s17BBNativePlayerKit0aB0C011createModalB4View02uiF9Contoller7jsonUrlAA0abF0CSo16UIViewControllerC_SStFZ",
+            "moduleName": "BBNativePlayerKit",
+            "static": true,
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createChromeCastButton",
+            "printedName": "createChromeCastButton(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GoogleCast.GCKUICastButton?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GCKUICastButton",
+                    "printedName": "GoogleCast.GCKUICastButton",
+                    "usr": "c:objc(cs)GCKUICastButton"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17BBNativePlayerKit0aB0C22createChromeCastButton5frameSo09GCKUICastG0CSgSo6CGRectV_tFZ",
+            "mangledName": "$s17BBNativePlayerKit0aB0C22createChromeCastButton5frameSo09GCKUICastG0CSgSo6CGRectV_tFZ",
+            "moduleName": "BBNativePlayerKit",
+            "static": true,
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getChromeCastMiniControlsView",
+            "printedName": "getChromeCastMiniControlsView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17BBNativePlayerKit0aB0C29getChromeCastMiniControlsViewSo6UIViewCSgyFZ",
+            "mangledName": "$s17BBNativePlayerKit0aB0C29getChromeCastMiniControlsViewSo6UIViewCSgyFZ",
             "moduleName": "BBNativePlayerKit",
             "static": true,
             "declAttributes": [
@@ -13138,77 +13252,77 @@
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Controllers\/BBNativePlayerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9102,
+      "offset": 10885,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Controllers\/BBNativePlayerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 9276,
+      "offset": 11059,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Controllers\/BBNativePlayerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9644,
+      "offset": 11427,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Controllers\/BBNativePlayerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9662,
+      "offset": 11445,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Controllers\/BBNativePlayerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9683,
+      "offset": 11466,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Controllers\/BBNativePlayerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9705,
+      "offset": 11488,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Controllers\/BBNativePlayerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10328,
+      "offset": 12111,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Controllers\/BBNativePlayerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10427,
+      "offset": 12210,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Controllers\/BBNativePlayerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10526,
+      "offset": 12309,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Controllers\/BBNativePlayerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11151,
+      "offset": 12934,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Controllers\/BBNativePlayerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11202,
+      "offset": 12985,
       "length": 4,
       "value": "true"
     },
@@ -15910,7 +16024,7 @@
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Helpers\/SubtitleManager.swift",
       "kind": "StringLiteral",
-      "offset": 11068,
+      "offset": 11534,
       "length": 30,
       "value": "\"userSelectedTextTrackIsoCode\""
     },
@@ -16648,6 +16762,13 @@
       "offset": 2792,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsShelfCollectionViewCell.swift",
+      "kind": "StringLiteral",
+      "offset": 2953,
+      "length": 22,
+      "value": "\"tooltip-replayButton\""
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/EmbargoView.swift",
@@ -17667,497 +17788,504 @@
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "Array",
-      "offset": 2521,
+      "offset": 3014,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2704,
+      "offset": 3197,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2961,
+      "offset": 3454,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2971,
+      "offset": 3464,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2980,
+      "offset": 3473,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "FloatLiteral",
-      "offset": 2990,
+      "offset": 3483,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3009,
+      "offset": 3502,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3019,
+      "offset": 3512,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3028,
+      "offset": 3521,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "FloatLiteral",
-      "offset": 3038,
+      "offset": 3531,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 3161,
+      "offset": 3654,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3259,
+      "offset": 3752,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3395,
+      "offset": 3888,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 3422,
+      "offset": 3915,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3495,
+      "offset": 3988,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3713,
+      "offset": 4206,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 3740,
+      "offset": 4233,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3813,
+      "offset": 4306,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3906,
+      "offset": 4399,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3991,
+      "offset": 4484,
       "length": 2,
       "value": "48"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 4133,
+      "offset": 4626,
       "length": 14,
       "value": "\"shorts-xmark\""
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4316,
+      "offset": 4809,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4471,
+      "offset": 4964,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4571,
+      "offset": 5064,
       "length": 2,
       "value": "25"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4611,
+      "offset": 5104,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 4671,
+      "offset": 5164,
       "length": 11,
       "value": "\"#363636FF\""
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4726,
+      "offset": 5219,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4783,
+      "offset": 5276,
       "length": 2,
       "value": "19"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4793,
+      "offset": 5286,
       "length": 2,
       "value": "19"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4805,
+      "offset": 5298,
       "length": 2,
       "value": "19"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4816,
+      "offset": 5309,
       "length": 2,
       "value": "19"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 4879,
+      "offset": 5372,
       "length": 15,
       "value": "\"tooltip-close\""
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 5066,
+      "offset": 5559,
       "length": 6,
       "value": "\"play\""
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5281,
+      "offset": 5774,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5347,
+      "offset": 5840,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5445,
+      "offset": 5938,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5455,
+      "offset": 5948,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5467,
+      "offset": 5960,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5478,
+      "offset": 5971,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "FloatLiteral",
-      "offset": 5541,
+      "offset": 6034,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5582,
+      "offset": 6075,
       "length": 2,
       "value": "25"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5616,
+      "offset": 6109,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5661,
+      "offset": 6154,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 5834,
+      "offset": 6327,
       "length": 7,
       "value": "\"pause\""
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6050,
+      "offset": 6543,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6116,
+      "offset": 6609,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6214,
+      "offset": 6707,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6224,
+      "offset": 6717,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6236,
+      "offset": 6729,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6247,
+      "offset": 6740,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "FloatLiteral",
-      "offset": 6310,
+      "offset": 6803,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6351,
+      "offset": 6844,
       "length": 2,
       "value": "25"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6385,
+      "offset": 6878,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6430,
+      "offset": 6923,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 6609,
+      "offset": 7102,
       "length": 6,
       "value": "\"play\""
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6824,
+      "offset": 7317,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6937,
+      "offset": 7430,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 7094,
+      "offset": 7587,
       "length": 6,
       "value": "\"Play\""
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 7177,
+      "offset": 7670,
       "length": 12,
       "value": "\"Learn more\""
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 7242,
+      "offset": 7735,
       "length": 11,
       "value": "\"#212121bf\""
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7474,
+      "offset": 7967,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 7516,
+      "offset": 8009,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7550,
+      "offset": 8043,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 7670,
+      "offset": 8163,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 7741,
+      "offset": 8234,
       "length": 11,
       "value": "\"Lato-Bold\""
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 7760,
+      "offset": 8253,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 25370,
+      "offset": 27128,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 26013,
+      "offset": 27946,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 29567,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 52847,
+      "offset": 62436,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 52880,
+      "offset": 62469,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/bbnativeplayerkit-swift\/BBNativePlayerKit\/BBNativePlayerKit\/Views\/BBShortsPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 52934,
+      "offset": 62523,
       "length": 2,
       "value": "\"\""
     },
