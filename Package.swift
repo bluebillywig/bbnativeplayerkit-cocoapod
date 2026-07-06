@@ -1,8 +1,8 @@
 // swift-tools-version:5.8
 import PackageDescription
 
-let googleCastSdkUrl = "https://dl.google.com/dl/chromecast/sdk/ios/GoogleCastSDK-ios-4.8.0_dynamic_xcframework.zip"
-let googleCastSdkChecksum = "4224724dc454b71eeab3debfe5c99e8a52ca9404d482f3b93c62e1c37be8dde4"
+let googleCastSdkUrl = "https://dl.google.com/dl/chromecast/sdk/ios/GoogleCastSDK-ios-no-bluetooth-4.8.0_dynamic_xcframework.zip"
+let googleCastSdkChecksum = "ae6db94f6fff7720bc28faac2f5dbd0b9c5af0215a1819c4682f7060f21eb1bb"
 
 let package = Package(
     name: "BlueBillywigNativePlayerKit-iOS",
