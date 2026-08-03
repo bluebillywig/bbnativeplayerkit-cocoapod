@@ -584,6 +584,14 @@ SWIFT_PROTOCOL("_TtP17BBNativePlayerKit26BBNativePlayerViewDelegate_")
 /// \param playerView UIView
 ///
 - (void)bbNativePlayerViewWithDidRequestExpand:(BBNativePlayerView * _Nonnull)playerView;
+/// An outstream companion ad is shown as the exit screen after the ad completes.
+/// \param playerView UIView
+///
+/// \param width the companion creative’s width
+///
+/// \param height the companion creative’s height
+///
+- (void)bbNativePlayerViewWithPlayerView:(BBNativePlayerView * _Nonnull)playerView didShowCompanionAd:(NSInteger)width height:(NSInteger)height;
 /// An ad was loaded
 /// \param playerView UIView
 ///
@@ -1408,6 +1416,14 @@ SWIFT_PROTOCOL("_TtP17BBNativePlayerKit26BBNativePlayerViewDelegate_")
 /// \param playerView UIView
 ///
 - (void)bbNativePlayerViewWithDidRequestExpand:(BBNativePlayerView * _Nonnull)playerView;
+/// An outstream companion ad is shown as the exit screen after the ad completes.
+/// \param playerView UIView
+///
+/// \param width the companion creative’s width
+///
+/// \param height the companion creative’s height
+///
+- (void)bbNativePlayerViewWithPlayerView:(BBNativePlayerView * _Nonnull)playerView didShowCompanionAd:(NSInteger)width height:(NSInteger)height;
 /// An ad was loaded
 /// \param playerView UIView
 ///

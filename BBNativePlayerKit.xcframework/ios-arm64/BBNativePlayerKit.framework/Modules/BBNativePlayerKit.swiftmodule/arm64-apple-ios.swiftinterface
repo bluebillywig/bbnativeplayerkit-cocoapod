@@ -85,6 +85,7 @@ extension BBNativePlayerKit.BBNativePlayerView {
   @objc @_Concurrency.MainActor optional func bbNativePlayerView(playerView: BBNativePlayerKit.BBNativePlayerView, didTriggerCustomStatistics ident: Swift.String, ev: Swift.String, aux: [Swift.String : Swift.String])
   @objc @_Concurrency.MainActor optional func bbNativePlayerView(didRequestCollapse playerView: BBNativePlayerKit.BBNativePlayerView)
   @objc @_Concurrency.MainActor optional func bbNativePlayerView(didRequestExpand playerView: BBNativePlayerKit.BBNativePlayerView)
+  @objc @_Concurrency.MainActor optional func bbNativePlayerView(playerView: BBNativePlayerKit.BBNativePlayerView, didShowCompanionAd width: Swift.Int, height: Swift.Int)
   @objc @_Concurrency.MainActor optional func bbNativePlayerView(didTriggerAdLoaded playerView: BBNativePlayerKit.BBNativePlayerView)
   @objc @_Concurrency.MainActor optional func bbNativePlayerView(didTriggerAdNotFound playerView: BBNativePlayerKit.BBNativePlayerView)
   @objc @_Concurrency.MainActor optional func bbNativePlayerView(playerView: BBNativePlayerKit.BBNativePlayerView, didTriggerAdError error: Swift.String?)
