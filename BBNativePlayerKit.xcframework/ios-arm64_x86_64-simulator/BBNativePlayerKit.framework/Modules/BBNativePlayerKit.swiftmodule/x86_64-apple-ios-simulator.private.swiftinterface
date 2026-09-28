@@ -6,11 +6,14 @@ import AVFoundation
 import AVKit
 @_exported import BBNativePlayerKit
 import CoreData
+import CoreText
+import CryptoKit
 import DeveloperToolsSupport
 import Foundation
 @preconcurrency import GoogleCast
 @preconcurrency import GoogleInteractiveMediaAds
 import Network
+import ObjectiveC
 import Swift
 import SwiftUI
 import UIKit.UIDevice
