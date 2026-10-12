@@ -52,7 +52,9 @@ extension BBNativePlayerKit.BBNativePlayerViewController : @preconcurrency Googl
   @_Concurrency.MainActor @objc dynamic public func didUpdateDeviceList()
 }
 extension BBNativePlayerKit.BBNativePlayerView {
+  @available(*, deprecated, renamed: "BBNativePlayer.lastKnownPosition(forClipId:)", message: "Moved to BBNativePlayer.lastKnownPosition(forClipId:).")
   @_Concurrency.MainActor public static func lastKnownPosition(forClipId clipId: Swift.String) -> Swift.Double?
+  @available(*, deprecated, message: "Use BBNativePlayer.lastKnownPosition(forClipId:) with the clip duration; a position near the end means finished.")
   @_Concurrency.MainActor public static func isFinished(forClipId clipId: Swift.String) -> Swift.Bool
   @_Concurrency.MainActor public func callApiMethod(method: bbnativeshared.ApiMethod, args: [Swift.String : Any?]?)
   @_Concurrency.MainActor public func setApiProperty(property: bbnativeshared.ApiProperty, value: Any?)
@@ -289,6 +291,7 @@ extension BBNativePlayerKit.BBNativeRendererView : BBNativePlayerKit.BBNativePla
   @_Concurrency.MainActor public static func createChromeCastButton(frame: CoreFoundation.CGRect) -> GoogleCast.GCKUICastButton?
   @_Concurrency.MainActor public static func getChromeCastMiniControlsView() -> UIKit.UIView?
   @_Concurrency.MainActor public static func createJsonEmbedUrl(baseUrl: Swift.String, appIndicator: Swift.String, appId: Swift.String, contentIndicator: Swift.String? = nil, contentId: Swift.String? = nil) -> Swift.String
+  @_Concurrency.MainActor public static func lastKnownPosition(forClipId clipId: Swift.String) -> Swift.Double?
   @objc deinit
 }
 @_Concurrency.MainActor @objc public protocol BBNativeShortsViewDelegate {
