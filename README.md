@@ -50,7 +50,10 @@ https://github.com/bluebillywig/bbnativeplayerkit-cocoapod
 
 > **Note:** Use the **Exact Version** dependency rule. The SDK does not follow strict semantic versioning, so "Up to Next Major" or "Up to Next Minor" may pull incompatible versions.
 >
-> For Chromecast without Bluetooth, use the **Branch** rule with `<version>-no-bluetooth` (e.g. `8.46.3-no-bluetooth`).
+
+**Chromecast without Bluetooth:** the package has two library products. Add `BlueBillywigNativePlayerKit-iOS` (Google Cast with Bluetooth) **or** `BlueBillywigNativePlayerKit-iOS-NoBluetooth` (no Bluetooth: casting works over the local network and `NSBluetoothAlwaysUsageDescription` is not needed) to your target, never both: each embeds its own `GoogleCast.framework`.
+
+> Releases before the `-NoBluetooth` product only have the **Branch** rule `<version>-no-bluetooth` (e.g. `8.46.3-no-bluetooth`).
 
 ## Quick Start
 
