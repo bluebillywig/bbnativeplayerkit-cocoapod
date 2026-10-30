@@ -38,7 +38,7 @@ The package has two library products:
 - `BlueBillywigNativePlayerKit-iOS`: Google Cast with Bluetooth.
 - `BlueBillywigNativePlayerKit-iOS-NoBluetooth`: Google Cast without Bluetooth. Casting works over the local network and `NSBluetoothAlwaysUsageDescription` is not needed.
 
-Add exactly one product, never both. Each one embeds its own `GoogleCast.framework`. The package brings the shared module, Google IMA, Google User Messaging Platform and Google Cast, so you do not add those yourself.
+Add exactly one product, never both. Each one embeds its own `GoogleCast.framework`. Pinned to a `<version>-no-bluetooth` branch? Switch to the `-NoBluetooth` product with Exact Version 8.63.0 or later. The package brings the shared module, Google IMA, Google User Messaging Platform and Google Cast, so you do not add those yourself.
 
 For the full steps, see the [Getting Started guide](https://bluebillywig.github.io/bbnativeplayersdk/ios_documentation/Getting%20Started/GettingStarted.html).
 
