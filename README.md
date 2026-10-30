@@ -22,38 +22,27 @@ The Blue Billywig Native Player Kit is an iOS SDK for playing video content from
 
 ## Installation
 
-### CocoaPods
-
-Add the following to your `Podfile`:
-
-```ruby
-pod 'BlueBillywigNativePlayerKit-iOS'
-
-# Chromecast is required — choose one:
-pod 'BlueBillywigNativePlayerKit-iOS/GoogleCastSDK'            # With Bluetooth (guest mode)
-pod 'BlueBillywigNativePlayerKit-iOS/GoogleCastSDKNoBluetooth'  # Without Bluetooth
-```
-
-Then run:
-
-```bash
-pod install --repo-update
-```
-
 ### Swift Package Manager
 
-In Xcode, go to **File > Add Package Dependencies** and enter:
+1. In Xcode, go to **File > Add Package Dependencies** and enter:
 
-```
-https://github.com/bluebillywig/bbnativeplayerkit-cocoapod
-```
+   ```
+   https://github.com/bluebillywig/bbnativeplayerkit-cocoapod
+   ```
 
-> **Note:** Use the **Exact Version** dependency rule. The SDK does not follow strict semantic versioning, so "Up to Next Major" or "Up to Next Minor" may pull incompatible versions.
->
+2. Set **Dependency Rule** to **Exact Version** and enter 8.63.0 or a later version. A new SDK version can contain breaking changes even when only the middle number goes up.
+3. Click **Add Package** and pick one product. Set **Add to Target** to your app target for that product, and to **None** for the other one.
 
-**Chromecast without Bluetooth:** the package has two library products. Add `BlueBillywigNativePlayerKit-iOS` (Google Cast with Bluetooth) **or** `BlueBillywigNativePlayerKit-iOS-NoBluetooth` (no Bluetooth: casting works over the local network and `NSBluetoothAlwaysUsageDescription` is not needed) to your target, never both: each embeds its own `GoogleCast.framework`.
+The package has two library products:
 
-> Releases before the `-NoBluetooth` product only have the **Branch** rule `<version>-no-bluetooth` (e.g. `8.46.3-no-bluetooth`).
+- `BlueBillywigNativePlayerKit-iOS`: Google Cast with Bluetooth.
+- `BlueBillywigNativePlayerKit-iOS-NoBluetooth`: Google Cast without Bluetooth. Casting works over the local network and `NSBluetoothAlwaysUsageDescription` is not needed.
+
+Add exactly one product, never both. Each one embeds its own `GoogleCast.framework`. The package brings the shared module, Google IMA, Google User Messaging Platform and Google Cast, so you do not add those yourself.
+
+For the full steps, see the [Getting Started guide](https://bluebillywig.github.io/bbnativeplayersdk/ios_documentation/Getting%20Started/GettingStarted.html).
+
+> **CocoaPods:** version 8.64 is the last version on CocoaPods and gets no further updates. Move to Swift Package Manager; [the migration guide](https://support.bluebillywig.com/native-sdk/ios-sdk-cocoapods-to-swift-package-manager/) has the steps.
 
 ## Quick Start
 
