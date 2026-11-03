@@ -29,6 +29,16 @@ Pod::Spec.new do |spec|
 
   spec.framework  = "UIKit", "Foundation", "AVFoundation"
 
+  # Build warning for the last CocoaPods releases (8.63, 8.64); CocoaPods Trunk is read-only
+  # from 2 Dec 2026. The support article quotes this text and name. To be removed in #21386.
+  spec.script_phase = {
+    :name => 'Blue Billywig distribution notice',
+    :script => 'echo "warning: BlueBillywigNativePlayerKit-iOS: CocoaPods Trunk stops accepting new versions on 2 Dec 2026. 8.64 is the last version on CocoaPods. Newer versions ship via Swift Package Manager only. See https://support.bluebillywig.com/native-sdk/ios-sdk-cocoapods-to-swift-package-manager/"',
+    :execution_position => :before_compile,
+    :always_out_of_date => '1',
+    :show_env_vars_in_log => '0'
+  }
+
   spec.default_subspec = :none
 
   spec.subspec 'GoogleCastSDK' do |google_cast_sdk|
