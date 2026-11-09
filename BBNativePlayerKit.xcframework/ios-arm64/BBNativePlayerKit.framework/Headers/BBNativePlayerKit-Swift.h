@@ -446,6 +446,7 @@ SWIFT_PROTOCOL("_TtP17BBNativePlayerKit26BBNativePlayerViewDelegate_")
 @protocol BBNativePlayerViewDelegate
 @optional
 /// Player was setup with json
+/// Call load / updatePlayout only after this.
 /// \param playerView UIView
 ///
 /// \param url String
