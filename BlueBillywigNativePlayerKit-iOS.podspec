@@ -35,7 +35,6 @@ Pod::Spec.new do |spec|
     :name => 'Blue Billywig distribution notice',
     :script => 'echo "warning: BlueBillywigNativePlayerKit-iOS: CocoaPods Trunk stops accepting new versions on 2 Dec 2026. 8.64 is the last version on CocoaPods. Newer versions ship via Swift Package Manager only. See https://support.bluebillywig.com/native-sdk/ios-sdk-cocoapods-to-swift-package-manager/"',
     :execution_position => :before_compile,
-    :always_out_of_date => '1',
     :show_env_vars_in_log => '0'
   }
 
