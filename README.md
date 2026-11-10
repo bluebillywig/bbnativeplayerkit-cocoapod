@@ -30,7 +30,7 @@ The Blue Billywig Native Player Kit is an iOS SDK for playing video content from
    https://github.com/bluebillywig/bbnativeplayerkit-cocoapod
    ```
 
-2. Set **Dependency Rule** to **Exact Version** and enter 8.63.0 or a later version. A new SDK version can contain breaking changes even when only the middle number goes up.
+2. Set **Dependency Rule** to **Exact Version** and enter 8.63.2 or a later version. A new SDK version can contain breaking changes even when only the middle number goes up.
 3. Click **Add Package** and pick one product. Set **Add to Target** to your app target for that product, and to **None** for the other one.
 
 The package has two library products:
@@ -38,7 +38,7 @@ The package has two library products:
 - `BlueBillywigNativePlayerKit-iOS`: Google Cast with Bluetooth.
 - `BlueBillywigNativePlayerKit-iOS-NoBluetooth`: Google Cast without Bluetooth. Casting works over the local network and `NSBluetoothAlwaysUsageDescription` is not needed.
 
-Add exactly one product, never both. Each one embeds its own `GoogleCast.framework`. The `<version>-no-bluetooth` branches are deprecated and 8.64 is the last version that gets one. Pinned to such a branch? Switch to the `-NoBluetooth` product with Exact Version 8.63.0 or later, or a version rule that floats. The package brings the shared module, Google IMA, Google User Messaging Platform and Google Cast, so you do not add those yourself.
+Add exactly one product, never both. Each one embeds its own `GoogleCast.framework`. The `<version>-no-bluetooth` branches are deprecated and 8.64 is the last version that gets one. Pinned to such a branch? Switch to the `-NoBluetooth` product with Exact Version 8.63.2 or later, or a version rule that floats. The package brings the shared module, Google IMA, Google User Messaging Platform and Google Cast, so you do not add those yourself.
 
 For the full steps, see the [Getting Started guide](https://bluebillywig.github.io/bbnativeplayersdk/ios_documentation/Getting%20Started/GettingStarted.html).
 
