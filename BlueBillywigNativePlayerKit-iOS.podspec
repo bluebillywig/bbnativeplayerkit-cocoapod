@@ -29,11 +29,12 @@ Pod::Spec.new do |spec|
 
   spec.framework  = "UIKit", "Foundation", "AVFoundation"
 
-  # Build warning for the last CocoaPods releases (8.63, 8.64); CocoaPods Trunk is read-only
-  # from 2 Dec 2026. The support article quotes this text and name. To be removed in #21386.
+  # Build warning. 8.63 and 8.64 (on CocoaPods Trunk) carry the text the support article quotes.
+  # From 8.65 on there is no Trunk version: this podspec is only reachable through a :git or
+  # :path Podfile reference, which is not a supported install route.
   spec.script_phase = {
     :name => 'Blue Billywig distribution notice',
-    :script => 'echo "warning: BlueBillywigNativePlayerKit-iOS: CocoaPods Trunk stops accepting new versions on 2 Dec 2026. 8.64 is the last version on CocoaPods. Newer versions ship via Swift Package Manager only. See https://support.bluebillywig.com/native-sdk/ios-sdk-cocoapods-to-swift-package-manager/"',
+    :script => 'echo "warning: BlueBillywigNativePlayerKit-iOS: installing this SDK through CocoaPods from git or a local path is not supported. 8.64 was the last version on CocoaPods. Use Swift Package Manager. See https://support.bluebillywig.com/native-sdk/ios-sdk-cocoapods-to-swift-package-manager/"',
     :execution_position => :before_compile,
     :show_env_vars_in_log => '0'
   }
